@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace CapaPresentacion
 {
     public class Class1
-    {  //fghfghd
+    {  
     }
 }
