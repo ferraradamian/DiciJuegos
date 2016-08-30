@@ -16,5 +16,16 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void PContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();           
+        }
     }
 }
