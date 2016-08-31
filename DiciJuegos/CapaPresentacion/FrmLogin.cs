@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,14 +19,12 @@ namespace CapaPresentacion
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            //if(UsuarioDAL.Autentificar(txtUsuario.Text,txtContraseña.Text)>0)
-            //    {
-            //        this.Hide();
-            //      Form1 f=new Form1();
-            //        f.ShowDialog();
-            //    }
-            //    else
-            //        MessageBox.Show("Error en los datos");
+            if (NUsuarios.Autentificar(txtUsuario.Text, txtContraseña.Text))
+            {
+                MessageBox.Show("Gracias Por Loguearse;" + txtUsuario.Text);
+            }            
+            else
+                MessageBox.Show("Error en los datos");
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -47,6 +46,16 @@ namespace CapaPresentacion
             //        MessageBox.Show("Error en los datos");
 
             //}
-        } 
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_CurrentChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
