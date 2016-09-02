@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmABMUsuarios));
-            this.LBCodigo = new System.Windows.Forms.Label();
             this.LBNombre = new System.Windows.Forms.Label();
             this.LBContraseña = new System.Windows.Forms.Label();
             this.LBPerfil = new System.Windows.Forms.Label();
-            this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TextContraseña = new System.Windows.Forms.TextBox();
             this.CBPerfil = new System.Windows.Forms.ComboBox();
@@ -52,23 +50,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
-            // LBCodigo
-            // 
-            this.LBCodigo.AutoSize = true;
-            this.LBCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LBCodigo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LBCodigo.Location = new System.Drawing.Point(25, 87);
-            this.LBCodigo.Name = "LBCodigo";
-            this.LBCodigo.Size = new System.Drawing.Size(63, 20);
-            this.LBCodigo.TabIndex = 0;
-            this.LBCodigo.Text = "Codigo:";
-            // 
             // LBNombre
             // 
             this.LBNombre.AutoSize = true;
             this.LBNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LBNombre.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LBNombre.Location = new System.Drawing.Point(25, 139);
+            this.LBNombre.Location = new System.Drawing.Point(25, 119);
             this.LBNombre.Name = "LBNombre";
             this.LBNombre.Size = new System.Drawing.Size(69, 20);
             this.LBNombre.TabIndex = 1;
@@ -79,7 +66,7 @@
             this.LBContraseña.AutoSize = true;
             this.LBContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LBContraseña.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LBContraseña.Location = new System.Drawing.Point(25, 194);
+            this.LBContraseña.Location = new System.Drawing.Point(25, 172);
             this.LBContraseña.Name = "LBContraseña";
             this.LBContraseña.Size = new System.Drawing.Size(96, 20);
             this.LBContraseña.TabIndex = 2;
@@ -90,29 +77,22 @@
             this.LBPerfil.AutoSize = true;
             this.LBPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LBPerfil.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LBPerfil.Location = new System.Drawing.Point(25, 243);
+            this.LBPerfil.Location = new System.Drawing.Point(25, 216);
             this.LBPerfil.Name = "LBPerfil";
             this.LBPerfil.Size = new System.Drawing.Size(48, 20);
             this.LBPerfil.TabIndex = 3;
             this.LBPerfil.Text = "Perfil:";
             // 
-            // TxtCodigo
-            // 
-            this.TxtCodigo.Location = new System.Drawing.Point(138, 87);
-            this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(163, 26);
-            this.TxtCodigo.TabIndex = 4;
-            // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(138, 141);
+            this.TxtNombre.Location = new System.Drawing.Point(138, 113);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(163, 26);
             this.TxtNombre.TabIndex = 5;
             // 
             // TextContraseña
             // 
-            this.TextContraseña.Location = new System.Drawing.Point(138, 194);
+            this.TextContraseña.Location = new System.Drawing.Point(138, 166);
             this.TextContraseña.Name = "TextContraseña";
             this.TextContraseña.Size = new System.Drawing.Size(163, 26);
             this.TextContraseña.TabIndex = 6;
@@ -124,7 +104,7 @@
             this.CBPerfil.Items.AddRange(new object[] {
             "Administrador",
             "Docente"});
-            this.CBPerfil.Location = new System.Drawing.Point(138, 241);
+            this.CBPerfil.Location = new System.Drawing.Point(138, 213);
             this.CBPerfil.Name = "CBPerfil";
             this.CBPerfil.Size = new System.Drawing.Size(163, 23);
             this.CBPerfil.TabIndex = 7;
@@ -139,14 +119,12 @@
             this.GbUsuarios.Controls.Add(this.BtEliminat);
             this.GbUsuarios.Controls.Add(this.BtModificar);
             this.GbUsuarios.Controls.Add(this.BtAgregar);
-            this.GbUsuarios.Controls.Add(this.LBCodigo);
             this.GbUsuarios.Controls.Add(this.CBPerfil);
             this.GbUsuarios.Controls.Add(this.LBNombre);
             this.GbUsuarios.Controls.Add(this.TextContraseña);
             this.GbUsuarios.Controls.Add(this.LBContraseña);
             this.GbUsuarios.Controls.Add(this.TxtNombre);
             this.GbUsuarios.Controls.Add(this.LBPerfil);
-            this.GbUsuarios.Controls.Add(this.TxtCodigo);
             this.GbUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GbUsuarios.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.GbUsuarios.Location = new System.Drawing.Point(13, 13);
@@ -262,12 +240,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label LBCodigo;
         private System.Windows.Forms.Label LBNombre;
         private System.Windows.Forms.Label LBContraseña;
         private System.Windows.Forms.Label LBPerfil;
-        private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TextContraseña;
         private System.Windows.Forms.ComboBox CBPerfil;

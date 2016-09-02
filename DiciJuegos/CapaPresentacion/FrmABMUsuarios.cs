@@ -15,6 +15,7 @@ namespace CapaPresentacion
         public FrmABMUsuarios()
         {
             InitializeComponent();
+            TxtNombre.Select();
         }
 
         private void CBPerfil_SelectedIndexChanged(object sender, EventArgs e)
