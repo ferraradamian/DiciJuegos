@@ -16,5 +16,15 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void CBPerfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

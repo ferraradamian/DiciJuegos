@@ -49,7 +49,7 @@
             // TLPFondoInicio
             // 
             this.TLPFondoInicio.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.TLPFondoInicio.BackgroundImage = global::CapaPresentacion.Properties.Resources.buildings;
+            this.TLPFondoInicio.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
             this.TLPFondoInicio.ColumnCount = 1;
             this.TLPFondoInicio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPFondoInicio.Controls.Add(this.MSInicio, 0, 0);
@@ -97,6 +97,7 @@
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // palabrasToolStripMenuItem
             // 

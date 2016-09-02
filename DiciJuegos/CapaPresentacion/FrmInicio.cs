@@ -27,5 +27,11 @@ namespace CapaPresentacion
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();           
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmABMUsuarios frmAbmUsuarios = new FrmABMUsuarios();
+            frmAbmUsuarios.ShowDialog();
+        }
     }
 }
