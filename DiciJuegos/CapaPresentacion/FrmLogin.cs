@@ -19,12 +19,22 @@ namespace CapaPresentacion
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if (NUsuarios.Autentificar(txtUsuario.Text, txtContraseña.Text))
-            {
-                MessageBox.Show("Gracias Por Loguearse;" + txtUsuario.Text);
-            }            
+            if (CBPerfil.Text != "Seleccionar" && txtUsuario.Text != "" && txtPassword.Text != "")
+            {           
+                if (NUsuarios.Autentificar(txtUsuario.Text, txtPassword.Text, CBPerfil.Text))
+                {
+                    this.Close();
+                }
+                else {
+                    txtPassword.Focus();
+                    txtPassword.Clear();
+                    MessageBox.Show("Acceso denegado", "Error", MessageBoxButtons.OK);
+                }
+            }
             else
-                MessageBox.Show("Error en los datos");
+            {
+                MessageBox.Show("Debe completar todos los campos", "Mensaje", MessageBoxButtons.OK);
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -32,28 +42,30 @@ namespace CapaPresentacion
             this.Close();
         }
 
-        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            //{
-            //    if (UsuarioDAL.Autentificar(txtUsuario.Text, txtContraseña.Text) > 0)
-            //    {
-            //        this.Hide();
-            //        Form1 f = new Form1();
-            //        f.ShowDialog();
-            //    }
-            //    else
-            //        MessageBox.Show("Error en los datos");
 
-            //}
-        }
-
-        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnEntrar.PerformClick();
+            }
 
         }
 
-        private void bindingSource1_CurrentChanged_1(object sender, EventArgs e)
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtPassword.Focus();
+            }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Select();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
