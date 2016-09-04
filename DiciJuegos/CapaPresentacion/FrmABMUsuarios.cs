@@ -30,6 +30,8 @@ namespace CapaPresentacion
             TxtNombre.Text = "";
             TxtPassword.Text = "";
             CBPerfil.Text = "Administrador";
+            txtCodigo.Text = "";
+            TxtBuscar.Text = "";
         }
 
         private void BtAgregar_Click(object sender, EventArgs e)
@@ -87,19 +89,19 @@ namespace CapaPresentacion
             }
             try
             {
+                int id = Convert.ToInt32(txtCodigo.Text.Trim());
                 var nom = TxtNombre.Text.Trim();
                 var pass = TxtPassword.Text.Trim();
                 var per = CBPerfil.Text.Trim();
-
-
-                if (NUsuarios.AgregarUsuario(nom, pass, per)) //si la funcion agregar pudo insertar
+                
+                if (NUsuarios.ModificarUsuario(id,nom, pass, per)) 
                 {
-                    MessageBox.Show("Usuario Registrado Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Usuario Editado Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiar();
                 }
-                else//si no pudo insertar
+                else
                 {
-                    MessageBox.Show("Usuario No Fue Registrado o Ya Existe", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El Usuario No Pudo Ser Editado", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -114,6 +116,7 @@ namespace CapaPresentacion
         {
             if (RbAgregar.Checked)
             {
+                limpiar();
                 BtLupa.Enabled = false;
                 BtModificar.Enabled = false;
                 BtEliminar.Enabled = false;
@@ -123,6 +126,9 @@ namespace CapaPresentacion
                 TxtNombre.Enabled = true;
                 TxtPassword.Enabled = true;
                 CBPerfil.Enabled = true;
+
+                txtCodigo.Visible = false;
+                LbCodigo.Visible = false;
             }
             
         }
@@ -131,6 +137,7 @@ namespace CapaPresentacion
         {
             if (RbModificar.Checked)
             {
+                limpiar();
                 BtLupa.Enabled = true;
                 BtModificar.Enabled = true;
                 BtEliminar.Enabled = false;
@@ -140,6 +147,9 @@ namespace CapaPresentacion
                 TxtNombre.Enabled = true;
                 TxtPassword.Enabled = true;
                 CBPerfil.Enabled = true;
+
+                txtCodigo.Visible = true;
+                LbCodigo.Visible = true;
             }
         }
 
@@ -147,6 +157,7 @@ namespace CapaPresentacion
         {
             if (RbEliminar.Checked)
             {
+                limpiar();
                 BtLupa.Enabled = true;
                 BtModificar.Enabled = false;
                 BtEliminar.Enabled = true;
@@ -156,6 +167,9 @@ namespace CapaPresentacion
                 TxtNombre.Enabled = false;
                 TxtPassword.Enabled = false;
                 CBPerfil.Enabled = false;
+
+                txtCodigo.Visible = true;
+                LbCodigo.Visible = true;
             }            
         }
 
@@ -182,5 +196,33 @@ namespace CapaPresentacion
             }
         }
 
+        private void TxtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                BtLupa.PerformClick();
+            }
+        }
+
+        private void BtEliminar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtCodigo.Text))
+            {
+                if (NUsuarios.EliminarUsuario(Convert.ToInt32(txtCodigo.Text)))
+                {
+                    MessageBox.Show("Usuario Eliminado Correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpiar();
+                }
+                else
+                {
+                    MessageBox.Show("El Usuario No Pudo Ser Eliminado", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Debe Buscar el Esuario a Eliminar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

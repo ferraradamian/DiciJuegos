@@ -36,24 +36,24 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.CBPerfil = new System.Windows.Forms.ComboBox();
             this.GbUsuarios = new System.Windows.Forms.GroupBox();
-            this.PABMSelecionar = new System.Windows.Forms.Panel();
-            this.RbAgregar = new System.Windows.Forms.RadioButton();
-            this.RbEliminar = new System.Windows.Forms.RadioButton();
-            this.RbModificar = new System.Windows.Forms.RadioButton();
+            this.LbCodigo = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtLupa = new System.Windows.Forms.Button();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.PABMSelecionar = new System.Windows.Forms.Panel();
+            this.RbAgregar = new System.Windows.Forms.RadioButton();
+            this.RbEliminar = new System.Windows.Forms.RadioButton();
+            this.RbModificar = new System.Windows.Forms.RadioButton();
             this.PbUsuario = new System.Windows.Forms.PictureBox();
             this.BtSalir = new System.Windows.Forms.Button();
             this.BtEliminar = new System.Windows.Forms.Button();
             this.BtModificar = new System.Windows.Forms.Button();
             this.BtAgregar = new System.Windows.Forms.Button();
-            this.LbCodigo = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.GbUsuarios.SuspendLayout();
-            this.PABMSelecionar.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.PABMSelecionar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,6 +101,7 @@
             // 
             this.TxtPassword.Location = new System.Drawing.Point(138, 248);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(163, 26);
             this.TxtPassword.TabIndex = 6;
             // 
@@ -142,6 +143,66 @@
             this.GbUsuarios.TabIndex = 8;
             this.GbUsuarios.TabStop = false;
             this.GbUsuarios.Text = "Usuarios";
+            // 
+            // LbCodigo
+            // 
+            this.LbCodigo.AutoSize = true;
+            this.LbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.LbCodigo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.LbCodigo.Location = new System.Drawing.Point(25, 154);
+            this.LbCodigo.Name = "LbCodigo";
+            this.LbCodigo.Size = new System.Drawing.Size(63, 20);
+            this.LbCodigo.TabIndex = 18;
+            this.LbCodigo.Text = "Codigo:";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(138, 150);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(163, 26);
+            this.txtCodigo.TabIndex = 19;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.BtLupa);
+            this.panel2.Controls.Add(this.TxtBuscar);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(138, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(347, 40);
+            this.panel2.TabIndex = 17;
+            // 
+            // BtLupa
+            // 
+            this.BtLupa.BackColor = System.Drawing.Color.Transparent;
+            this.BtLupa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtLupa.Image = ((System.Drawing.Image)(resources.GetObject("BtLupa.Image")));
+            this.BtLupa.Location = new System.Drawing.Point(290, 5);
+            this.BtLupa.Name = "BtLupa";
+            this.BtLupa.Size = new System.Drawing.Size(37, 28);
+            this.BtLupa.TabIndex = 15;
+            this.BtLupa.UseVisualStyleBackColor = false;
+            this.BtLupa.Click += new System.EventHandler(this.BtLupa_Click);
+            // 
+            // TxtBuscar
+            // 
+            this.TxtBuscar.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBuscar.Location = new System.Drawing.Point(92, 6);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(192, 26);
+            this.TxtBuscar.TabIndex = 14;
+            this.TxtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBuscar_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Buscar:";
             // 
             // PABMSelecionar
             // 
@@ -194,46 +255,6 @@
             this.RbModificar.UseVisualStyleBackColor = true;
             this.RbModificar.CheckedChanged += new System.EventHandler(this.RbModificar_CheckedChanged);
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.BtLupa);
-            this.panel2.Controls.Add(this.TxtBuscar);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(138, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(347, 40);
-            this.panel2.TabIndex = 17;
-            // 
-            // BtLupa
-            // 
-            this.BtLupa.BackColor = System.Drawing.Color.Transparent;
-            this.BtLupa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtLupa.Image = ((System.Drawing.Image)(resources.GetObject("BtLupa.Image")));
-            this.BtLupa.Location = new System.Drawing.Point(290, 5);
-            this.BtLupa.Name = "BtLupa";
-            this.BtLupa.Size = new System.Drawing.Size(37, 28);
-            this.BtLupa.TabIndex = 15;
-            this.BtLupa.UseVisualStyleBackColor = false;
-            this.BtLupa.Click += new System.EventHandler(this.BtLupa_Click);
-            // 
-            // TxtBuscar
-            // 
-            this.TxtBuscar.BackColor = System.Drawing.SystemColors.Window;
-            this.TxtBuscar.Location = new System.Drawing.Point(92, 6);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(192, 26);
-            this.TxtBuscar.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Buscar:";
-            // 
             // PbUsuario
             // 
             this.PbUsuario.BackColor = System.Drawing.Color.Transparent;
@@ -262,6 +283,7 @@
             this.BtEliminar.TabIndex = 10;
             this.BtEliminar.Text = "Eliminar";
             this.BtEliminar.UseVisualStyleBackColor = false;
+            this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
             // 
             // BtModificar
             // 
@@ -283,25 +305,6 @@
             this.BtAgregar.UseVisualStyleBackColor = false;
             this.BtAgregar.Click += new System.EventHandler(this.BtAgregar_Click);
             // 
-            // LbCodigo
-            // 
-            this.LbCodigo.AutoSize = true;
-            this.LbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbCodigo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.LbCodigo.Location = new System.Drawing.Point(25, 154);
-            this.LbCodigo.Name = "LbCodigo";
-            this.LbCodigo.Size = new System.Drawing.Size(63, 20);
-            this.LbCodigo.TabIndex = 18;
-            this.LbCodigo.Text = "Codigo:";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Enabled = false;
-            this.txtCodigo.Location = new System.Drawing.Point(138, 150);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(163, 26);
-            this.txtCodigo.TabIndex = 19;
-            // 
             // FrmABMUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,10 +318,10 @@
             this.Text = "Usuarios";
             this.GbUsuarios.ResumeLayout(false);
             this.GbUsuarios.PerformLayout();
-            this.PABMSelecionar.ResumeLayout(false);
-            this.PABMSelecionar.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.PABMSelecionar.ResumeLayout(false);
+            this.PABMSelecionar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbUsuario)).EndInit();
             this.ResumeLayout(false);
 
