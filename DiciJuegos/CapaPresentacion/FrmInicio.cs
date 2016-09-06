@@ -33,5 +33,11 @@ namespace CapaPresentacion
             FrmABMUsuarios frmAbmUsuarios = new FrmABMUsuarios();
             frmAbmUsuarios.ShowDialog();
         }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmABMCategorias frmAbmCategorias= new FrmABMCategorias();
+            frmAbmCategorias.ShowDialog();
+        }
     }
 }

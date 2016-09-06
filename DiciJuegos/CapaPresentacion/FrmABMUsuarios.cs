@@ -83,10 +83,13 @@ namespace CapaPresentacion
 
         private void BtModificar_Click(object sender, EventArgs e)
         {
-            if (!validacionCampos())
+            if (this.TxtNombre.Text.Trim().Length == 0 || this.TxtPassword.Text.Trim().Length == 0)
             {
+                MessageBox.Show("Debe Buscar el Usuario que Desea Modificar", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.TxtNombre.Select();
                 return;
             }
+
             try
             {
                 int id = Convert.ToInt32(txtCodigo.Text.Trim());
@@ -221,7 +224,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Debe Buscar el Esuario a Eliminar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Debe Buscar el Usuario a Eliminar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
