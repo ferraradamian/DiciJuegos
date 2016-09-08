@@ -19,6 +19,10 @@ namespace CapaPresentacion
             TxtCategoria.Select();
             cargarCategorias();
             ChlbCategorias.SelectionMode = SelectionMode.One;
+            BtAgregar.Enabled = true;
+            BtModificar.Enabled = false;
+            BtEliminar.Enabled = false;
+
         }
 
         private void BtSalir_Click(object sender, EventArgs e)
@@ -46,6 +50,8 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show("Categoria Registrada Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiar();
+                    ChlbCategorias.Items.Clear();
+                    cargarCategorias();
                 }
                 else//si no pudo insertar
                 {
@@ -76,12 +82,70 @@ namespace CapaPresentacion
             if ((ChlbCategorias.CheckedItems.Count == 0))
             {
                 TxtCategoria.Text = ChlbCategorias.Text;
+                BtAgregar.Enabled = false;
+                BtModificar.Enabled = true;
+                BtEliminar.Enabled = true;
             }
             else
             {
                 TxtCategoria.Text = "";
+                BtAgregar.Enabled = true;
+                BtModificar.Enabled = false;
+                BtEliminar.Enabled = false;
             }
 
+        }
+
+        private void BtModificar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(TxtCategoria.Text) && !String.IsNullOrEmpty(ChlbCategorias.Text) && (TxtCategoria.Text != ChlbCategorias.Text))
+            {
+                if (NCategorias.ModificarCategoria(TxtCategoria.Text, ChlbCategorias.Text))
+                {
+                    MessageBox.Show("Categoria Modificada Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpiar();
+                    ChlbCategorias.Items.Clear();
+                    cargarCategorias();
+                    BtAgregar.Enabled = true;
+                    BtModificar.Enabled = false;
+                    BtEliminar.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("La Categoria no pudo ser Modificada", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe Seleccionar una Categoria y Modificarla", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }         
+            
+        }
+
+        private void BtEliminar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(ChlbCategorias.Text))
+            {
+                if (NCategorias.EliminarCategoria(ChlbCategorias.Text))
+                {
+                    MessageBox.Show("Categoria Eliminada Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpiar();
+                    ChlbCategorias.Items.Clear();
+                    cargarCategorias();
+                    BtAgregar.Enabled = true;
+                    BtModificar.Enabled = false;
+                    BtEliminar.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("La Categoria no pudo ser eliminada", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe Seleccionar una Categoria para Eliminar", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

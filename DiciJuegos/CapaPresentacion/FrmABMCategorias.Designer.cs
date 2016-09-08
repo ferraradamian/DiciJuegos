@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.GbCategoria = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ChlbCategorias = new System.Windows.Forms.CheckedListBox();
+            this.TxtCategoria = new System.Windows.Forms.TextBox();
+            this.LbCategoria = new System.Windows.Forms.Label();
             this.BtSalir = new System.Windows.Forms.Button();
             this.BtEliminar = new System.Windows.Forms.Button();
             this.BtModificar = new System.Windows.Forms.Button();
             this.BtAgregar = new System.Windows.Forms.Button();
-            this.LbCategoria = new System.Windows.Forms.Label();
-            this.TxtCategoria = new System.Windows.Forms.TextBox();
-            this.ChlbCategorias = new System.Windows.Forms.CheckedListBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.GbCategoria.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GbCategoria
             // 
+            this.GbCategoria.Controls.Add(this.pictureBox1);
             this.GbCategoria.Controls.Add(this.ChlbCategorias);
             this.GbCategoria.Controls.Add(this.TxtCategoria);
             this.GbCategoria.Controls.Add(this.LbCategoria);
@@ -57,6 +59,44 @@
             this.GbCategoria.TabIndex = 9;
             this.GbCategoria.TabStop = false;
             this.GbCategoria.Text = "Categorias";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CapaPresentacion.Properties.Resources.category_item_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(326, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 55);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ChlbCategorias
+            // 
+            this.ChlbCategorias.CheckOnClick = true;
+            this.ChlbCategorias.FormattingEnabled = true;
+            this.ChlbCategorias.Location = new System.Drawing.Point(17, 80);
+            this.ChlbCategorias.Name = "ChlbCategorias";
+            this.ChlbCategorias.Size = new System.Drawing.Size(395, 109);
+            this.ChlbCategorias.Sorted = true;
+            this.ChlbCategorias.TabIndex = 1;
+            this.ChlbCategorias.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ChlbCategorias_ItemCheck);
+            // 
+            // TxtCategoria
+            // 
+            this.TxtCategoria.Location = new System.Drawing.Point(123, 35);
+            this.TxtCategoria.Name = "TxtCategoria";
+            this.TxtCategoria.Size = new System.Drawing.Size(191, 26);
+            this.TxtCategoria.TabIndex = 19;
+            // 
+            // LbCategoria
+            // 
+            this.LbCategoria.AutoSize = true;
+            this.LbCategoria.Location = new System.Drawing.Point(25, 37);
+            this.LbCategoria.Name = "LbCategoria";
+            this.LbCategoria.Size = new System.Drawing.Size(92, 20);
+            this.LbCategoria.TabIndex = 18;
+            this.LbCategoria.Text = "Categoria:";
+            this.LbCategoria.UseWaitCursor = true;
             // 
             // BtSalir
             // 
@@ -76,6 +116,7 @@
             this.BtEliminar.TabIndex = 10;
             this.BtEliminar.Text = "Eliminar";
             this.BtEliminar.UseVisualStyleBackColor = false;
+            this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
             // 
             // BtModificar
             // 
@@ -85,6 +126,7 @@
             this.BtModificar.TabIndex = 9;
             this.BtModificar.Text = "Modificar";
             this.BtModificar.UseVisualStyleBackColor = false;
+            this.BtModificar.Click += new System.EventHandler(this.BtModificar_Click);
             // 
             // BtAgregar
             // 
@@ -95,34 +137,6 @@
             this.BtAgregar.Text = "Agregar";
             this.BtAgregar.UseVisualStyleBackColor = false;
             this.BtAgregar.Click += new System.EventHandler(this.BtAgregar_Click);
-            // 
-            // LbCategoria
-            // 
-            this.LbCategoria.AutoSize = true;
-            this.LbCategoria.Location = new System.Drawing.Point(25, 41);
-            this.LbCategoria.Name = "LbCategoria";
-            this.LbCategoria.Size = new System.Drawing.Size(92, 20);
-            this.LbCategoria.TabIndex = 18;
-            this.LbCategoria.Text = "Categoria:";
-            this.LbCategoria.UseWaitCursor = true;
-            // 
-            // TxtCategoria
-            // 
-            this.TxtCategoria.Location = new System.Drawing.Point(123, 35);
-            this.TxtCategoria.Name = "TxtCategoria";
-            this.TxtCategoria.Size = new System.Drawing.Size(140, 26);
-            this.TxtCategoria.TabIndex = 19;
-            // 
-            // ChlbCategorias
-            // 
-            this.ChlbCategorias.CheckOnClick = true;
-            this.ChlbCategorias.FormattingEnabled = true;
-            this.ChlbCategorias.Location = new System.Drawing.Point(17, 80);
-            this.ChlbCategorias.Name = "ChlbCategorias";
-            this.ChlbCategorias.Size = new System.Drawing.Size(395, 109);
-            this.ChlbCategorias.Sorted = true;
-            this.ChlbCategorias.TabIndex = 1;
-            this.ChlbCategorias.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ChlbCategorias_ItemCheck);
             // 
             // FrmABMCategorias
             // 
@@ -137,6 +151,7 @@
             this.Text = "Categorias";
             this.GbCategoria.ResumeLayout(false);
             this.GbCategoria.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,6 +166,6 @@
         private System.Windows.Forms.TextBox TxtCategoria;
         private System.Windows.Forms.Label LbCategoria;
         private System.Windows.Forms.CheckedListBox ChlbCategorias;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

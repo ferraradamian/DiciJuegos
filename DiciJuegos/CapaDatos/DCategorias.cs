@@ -63,12 +63,12 @@ namespace CapaDatos
             }
         }
 
-        public static bool EditarCategoria(int pId, String pCategoria)
+        public static bool EditarCategoria(String pCatNueva, String pCatActual)
         {
             SqlCommand sql = new SqlCommand("EditarCategorias", DConexion.ObtnerConexion());
             sql.CommandType = CommandType.StoredProcedure;
-            sql.Parameters.Add("@Id", SqlDbType.Int).Value = pId;
-            sql.Parameters.Add("@Categoria", SqlDbType.VarChar, 20).Value = pCategoria;
+            sql.Parameters.Add("@CategoriaNueva", SqlDbType.VarChar, 20).Value = pCatNueva;
+            sql.Parameters.Add("@CategoriaActual", SqlDbType.VarChar, 20).Value = pCatActual;
             try
             {
                 int r = sql.ExecuteNonQuery();
@@ -82,11 +82,11 @@ namespace CapaDatos
             }
         }
 
-        public static bool DeleteCategoria(int pId)
+        public static bool DeleteCategoria(String pCategoria)
         {
             SqlCommand sql = new SqlCommand("DeleteCategorias", DConexion.ObtnerConexion());
             sql.CommandType = CommandType.StoredProcedure;
-            sql.Parameters.Add("@Id", SqlDbType.Int).Value = pId;
+            sql.Parameters.Add("@Categoria", SqlDbType.VarChar, 20).Value = pCategoria;
             try
             {
                 int r = sql.ExecuteNonQuery();

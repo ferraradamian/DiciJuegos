@@ -50,7 +50,16 @@ namespace CapaNegocio
                 Cats.Add(item.Categoria);
             }
             return Cats;
-           
+        }
+
+        public static bool ModificarCategoria(String pCategoriaNueva, String pCategoriaActual)
+        {
+            return DCategorias.EditarCategoria(pCategoriaNueva, pCategoriaActual);
+        }
+
+        public static bool EliminarCategoria(String pCategoria)
+        {
+            return DCategorias.DeleteCategoria(pCategoria);
         }
     }
 }
