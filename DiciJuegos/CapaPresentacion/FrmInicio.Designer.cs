@@ -35,7 +35,6 @@
             this.palabrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.institucionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,8 +85,7 @@
             this.usuariosToolStripMenuItem,
             this.palabrasToolStripMenuItem,
             this.categoriaToolStripMenuItem,
-            this.regionesToolStripMenuItem,
-            this.institucionesToolStripMenuItem});
+            this.regionesToolStripMenuItem});
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
             this.aBMsToolStripMenuItem.Text = "ABMs";
@@ -95,34 +93,29 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // palabrasToolStripMenuItem
             // 
             this.palabrasToolStripMenuItem.Name = "palabrasToolStripMenuItem";
-            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.palabrasToolStripMenuItem.Text = "Palabras";
             // 
             // categoriaToolStripMenuItem
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.categoriaToolStripMenuItem.Text = "Categorias";
             this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
             // 
             // regionesToolStripMenuItem
             // 
             this.regionesToolStripMenuItem.Name = "regionesToolStripMenuItem";
-            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.regionesToolStripMenuItem.Text = "Regiones";
-            // 
-            // institucionesToolStripMenuItem
-            // 
-            this.institucionesToolStripMenuItem.Name = "institucionesToolStripMenuItem";
-            this.institucionesToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.institucionesToolStripMenuItem.Text = "Instituciones";
+            this.regionesToolStripMenuItem.Click += new System.EventHandler(this.regionesToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
@@ -194,7 +187,6 @@
         private System.Windows.Forms.ToolStripMenuItem palabrasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem regionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem institucionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;

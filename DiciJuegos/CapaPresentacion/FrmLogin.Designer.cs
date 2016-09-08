@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(39, 209);
+            this.label1.Location = new System.Drawing.Point(11, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 2;
@@ -59,7 +59,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(39, 259);
+            this.label2.Location = new System.Drawing.Point(11, 222);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
@@ -68,7 +68,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(142, 207);
+            this.txtUsuario.Location = new System.Drawing.Point(114, 179);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(182, 24);
             this.txtUsuario.TabIndex = 4;
@@ -77,7 +77,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(142, 259);
+            this.txtPassword.Location = new System.Drawing.Point(114, 222);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(182, 24);
@@ -90,7 +90,7 @@
             this.LBPerfil.BackColor = System.Drawing.Color.Transparent;
             this.LBPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBPerfil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LBPerfil.Location = new System.Drawing.Point(39, 163);
+            this.LBPerfil.Location = new System.Drawing.Point(11, 144);
             this.LBPerfil.Name = "LBPerfil";
             this.LBPerfil.Size = new System.Drawing.Size(48, 20);
             this.LBPerfil.TabIndex = 7;
@@ -103,7 +103,7 @@
             this.CBPerfil.Items.AddRange(new object[] {
             "Administrador",
             "Docente"});
-            this.CBPerfil.Location = new System.Drawing.Point(142, 161);
+            this.CBPerfil.Location = new System.Drawing.Point(114, 142);
             this.CBPerfil.Name = "CBPerfil";
             this.CBPerfil.Size = new System.Drawing.Size(182, 21);
             this.CBPerfil.TabIndex = 8;
@@ -113,36 +113,38 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(171, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 126);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Teal;
+            this.btnCancelar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(230, 302);
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCancelar.Location = new System.Drawing.Point(202, 263);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnCancelar.Size = new System.Drawing.Size(94, 65);
             this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.Teal;
+            this.btnEntrar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrar.Image")));
-            this.btnEntrar.Location = new System.Drawing.Point(41, 302);
+            this.btnEntrar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEntrar.Location = new System.Drawing.Point(15, 263);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnEntrar.Size = new System.Drawing.Size(94, 65);
             this.btnEntrar.TabIndex = 0;
+            this.btnEntrar.Text = "Aceptar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
@@ -150,7 +152,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(367, 380);
+            this.ClientSize = new System.Drawing.Size(313, 338);
             this.ControlBox = false;
             this.Controls.Add(this.CBPerfil);
             this.Controls.Add(this.LBPerfil);

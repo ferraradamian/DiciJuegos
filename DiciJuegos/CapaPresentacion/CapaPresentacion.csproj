@@ -48,6 +48,12 @@
     <Compile Include="FrmABMCategorias.Designer.cs">
       <DependentUpon>FrmABMCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmABMRegiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABMRegiones.Designer.cs">
+      <DependentUpon>FrmABMRegiones.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmABMUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <EmbeddedResource Include="FrmABMCategorias.resx">
       <DependentUpon>FrmABMCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmABMRegiones.resx">
+      <DependentUpon>FrmABMRegiones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmABMUsuarios.resx">
       <DependentUpon>FrmABMUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\category-item-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zone-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
