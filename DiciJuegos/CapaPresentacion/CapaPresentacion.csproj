@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +49,12 @@
     <Compile Include="FrmABMCategorias.Designer.cs">
       <DependentUpon>FrmABMCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmABMPalabras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmABMPalabras.Designer.cs">
+      <DependentUpon>FrmABMPalabras.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmABMRegiones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +66,12 @@
     </Compile>
     <Compile Include="FrmABMUsuarios.Designer.cs">
       <DependentUpon>FrmABMUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion.Designer.cs">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -89,11 +102,17 @@
     <EmbeddedResource Include="FrmABMCategorias.resx">
       <DependentUpon>FrmABMCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmABMPalabras.resx">
+      <DependentUpon>FrmABMPalabras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmABMRegiones.resx">
       <DependentUpon>FrmABMRegiones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmABMUsuarios.resx">
       <DependentUpon>FrmABMUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion.resx">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -126,6 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

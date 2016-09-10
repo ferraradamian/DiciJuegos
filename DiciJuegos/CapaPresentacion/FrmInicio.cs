@@ -45,5 +45,17 @@ namespace CapaPresentacion
             FrmABMRegiones frmAbmRegiones = new FrmABMRegiones();
             frmAbmRegiones.ShowDialog();
         }
+
+        private void palabrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmABMPalabras frmAbmPalabras = new FrmABMPalabras();
+            frmAbmPalabras.ShowDialog();
+        }
+
+        private void configuracToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConfiguracion frmComfiguracion = new FrmConfiguracion();
+            frmComfiguracion.ShowDialog();
+        }
     }
 }

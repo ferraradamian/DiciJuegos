@@ -69,5 +69,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void GbLogin_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
