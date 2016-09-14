@@ -21,5 +21,43 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void BtnBuscarImg_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog BuscarImag = new OpenFileDialog();
+            BuscarImag.Filter = "Image Files(*.bmp, *.jpg, *png) | *.bmp; *.jpg; *png"; 
+
+            if (BuscarImag.ShowDialog() == DialogResult.OK)
+            {
+                TxtImagen.Text = BuscarImag.FileName;
+            }
+        }
+
+        private void BtnSeña_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog BuscarSeña = new OpenFileDialog();
+            BuscarSeña.Filter = "Video Files(*.AVI, *.MPEG, *.MOV,*.MPEG4) | *.AVI; *.MPEG; *MOV;*.MPEG4";
+
+            if (BuscarSeña.ShowDialog() == DialogResult.OK)
+            {
+                TxtSeña.Text = BuscarSeña.FileName;
+            }
+        }
+
+        private void BtnModulacion_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog BuscarModulacion = new OpenFileDialog();
+            BuscarModulacion.Filter = "Image Files(*.bmp, *.jpg, *png) | *.bmp; *.jpg; *png";
+
+            if (BuscarModulacion.ShowDialog() == DialogResult.OK)
+            {
+                TxtModulacion.Text = BuscarModulacion.FileName;
+            }
+        }
+
+        private void GbPalabra_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
