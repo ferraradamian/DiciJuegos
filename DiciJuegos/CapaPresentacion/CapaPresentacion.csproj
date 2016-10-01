@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creditos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Creditos.Designer.cs">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmABMCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Creditos.resx">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmABMCategorias.resx">
       <DependentUpon>FrmABMCategorias.cs</DependentUpon>
     </EmbeddedResource>

@@ -37,7 +37,7 @@
             this.regionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBUtnFooter = new System.Windows.Forms.PictureBox();
             this.PContenedor = new System.Windows.Forms.Panel();
             this.TLPFondoInicio.SuspendLayout();
@@ -72,7 +72,7 @@
             this.aBMsToolStripMenuItem,
             this.loginToolStripMenuItem,
             this.configuracToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
+            this.CreditoToolStripMenuItem});
             this.MSInicio.Location = new System.Drawing.Point(0, 0);
             this.MSInicio.Name = "MSInicio";
             this.MSInicio.Size = new System.Drawing.Size(905, 25);
@@ -89,6 +89,7 @@
             this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
             this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
             this.aBMsToolStripMenuItem.Text = "ABMs";
+            this.aBMsToolStripMenuItem.Click += new System.EventHandler(this.aBMsToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -132,11 +133,12 @@
             this.configuracToolStripMenuItem.Text = "Configuración";
             this.configuracToolStripMenuItem.Click += new System.EventHandler(this.configuracToolStripMenuItem_Click);
             // 
-            // ayudaToolStripMenuItem
+            // CreditoToolStripMenuItem
             // 
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
-            this.ayudaToolStripMenuItem.Text = "Creditos";
+            this.CreditoToolStripMenuItem.Name = "CreditoToolStripMenuItem";
+            this.CreditoToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
+            this.CreditoToolStripMenuItem.Text = "Creditos";
+            this.CreditoToolStripMenuItem.Click += new System.EventHandler(this.CreditoToolStripMenuItem_Click);
             // 
             // PBUtnFooter
             // 
@@ -191,7 +193,7 @@
         private System.Windows.Forms.ToolStripMenuItem regionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CreditoToolStripMenuItem;
         private System.Windows.Forms.PictureBox PBUtnFooter;
         private System.Windows.Forms.Panel PContenedor;
     }

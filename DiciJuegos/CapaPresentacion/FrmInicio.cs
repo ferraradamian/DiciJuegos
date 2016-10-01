@@ -24,6 +24,7 @@ namespace CapaPresentacion
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.PContenedor.Controls.Clear();
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();           
         }
@@ -54,8 +55,21 @@ namespace CapaPresentacion
 
         private void configuracToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.PContenedor.Controls.Clear();
             FrmConfiguracion frmComfiguracion = new FrmConfiguracion();
             frmComfiguracion.ShowDialog();
+        }
+
+        private void CreditoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Creditos controlCreditos = new Creditos();
+            this.PContenedor.Controls.Clear();
+            this.PContenedor.Controls.Add(controlCreditos);
+        }
+
+        private void aBMsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.PContenedor.Controls.Clear();
         }
     }
 }
