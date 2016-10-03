@@ -34,6 +34,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -91,6 +92,12 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="JuegoRana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JuegoRana.Designer.cs">
+      <DependentUpon>JuegoRana.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -129,6 +136,9 @@
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="JuegoRana.resx">
+      <DependentUpon>JuegoRana.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -157,6 +167,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mosca.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
