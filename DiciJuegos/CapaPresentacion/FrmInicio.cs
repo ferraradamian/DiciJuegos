@@ -71,5 +71,17 @@ namespace CapaPresentacion
         {
             this.PContenedor.Controls.Clear();
         }
+
+        private void ranaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JuegoRana controlJuegoRana = new JuegoRana();
+            this.PContenedor.Controls.Clear();
+            this.PContenedor.Controls.Add(controlJuegoRana);
+        }
+
+        private void diccionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.PContenedor.Controls.Clear();
+        }
     }
 }

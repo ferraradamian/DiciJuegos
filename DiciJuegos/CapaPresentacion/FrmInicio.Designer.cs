@@ -40,6 +40,11 @@
             this.CreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBUtnFooter = new System.Windows.Forms.PictureBox();
             this.PContenedor = new System.Windows.Forms.Panel();
+            this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ranaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diccionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adivinarPalabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TLPFondoInicio.SuspendLayout();
             this.MSInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBUtnFooter)).BeginInit();
@@ -70,6 +75,8 @@
             this.MSInicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MSInicio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMsToolStripMenuItem,
+            this.diccionarioToolStripMenuItem,
+            this.juegosToolStripMenuItem,
             this.loginToolStripMenuItem,
             this.configuracToolStripMenuItem,
             this.CreditoToolStripMenuItem});
@@ -162,6 +169,43 @@
             this.PContenedor.TabIndex = 2;
             this.PContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PContenedor_Paint);
             // 
+            // juegosToolStripMenuItem
+            // 
+            this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ranaToolStripMenuItem,
+            this.autosToolStripMenuItem});
+            this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
+            this.juegosToolStripMenuItem.Size = new System.Drawing.Size(63, 21);
+            this.juegosToolStripMenuItem.Text = "Juegos";
+            // 
+            // ranaToolStripMenuItem
+            // 
+            this.ranaToolStripMenuItem.Name = "ranaToolStripMenuItem";
+            this.ranaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ranaToolStripMenuItem.Text = "Rana";
+            this.ranaToolStripMenuItem.Click += new System.EventHandler(this.ranaToolStripMenuItem_Click);
+            // 
+            // autosToolStripMenuItem
+            // 
+            this.autosToolStripMenuItem.Name = "autosToolStripMenuItem";
+            this.autosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autosToolStripMenuItem.Text = "Autos";
+            // 
+            // diccionarioToolStripMenuItem
+            // 
+            this.diccionarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adivinarPalabraToolStripMenuItem});
+            this.diccionarioToolStripMenuItem.Name = "diccionarioToolStripMenuItem";
+            this.diccionarioToolStripMenuItem.Size = new System.Drawing.Size(90, 21);
+            this.diccionarioToolStripMenuItem.Text = "Diccionario";
+            this.diccionarioToolStripMenuItem.Click += new System.EventHandler(this.diccionarioToolStripMenuItem_Click);
+            // 
+            // adivinarPalabraToolStripMenuItem
+            // 
+            this.adivinarPalabraToolStripMenuItem.Name = "adivinarPalabraToolStripMenuItem";
+            this.adivinarPalabraToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.adivinarPalabraToolStripMenuItem.Text = "Adivinar Palabra";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,5 +240,10 @@
         private System.Windows.Forms.ToolStripMenuItem CreditoToolStripMenuItem;
         private System.Windows.Forms.PictureBox PBUtnFooter;
         private System.Windows.Forms.Panel PContenedor;
+        private System.Windows.Forms.ToolStripMenuItem diccionarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adivinarPalabraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem juegosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ranaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem;
     }
 }
