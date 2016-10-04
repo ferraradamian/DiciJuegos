@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.GbConfiguracion = new System.Windows.Forms.GroupBox();
+            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.CmbxRegion = new System.Windows.Forms.ComboBox();
             this.LRegion = new System.Windows.Forms.Label();
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.CmbxRegion = new System.Windows.Forms.ComboBox();
-            this.BtnAceptar = new System.Windows.Forms.Button();
             this.GbConfiguracion.SuspendLayout();
             this.SuspendLayout();
             // 
             // GbConfiguracion
             // 
+            this.GbConfiguracion.BackColor = System.Drawing.Color.Black;
             this.GbConfiguracion.Controls.Add(this.BtnAceptar);
             this.GbConfiguracion.Controls.Add(this.CmbxRegion);
             this.GbConfiguracion.Controls.Add(this.LRegion);
@@ -50,6 +51,27 @@
             this.GbConfiguracion.TabIndex = 10;
             this.GbConfiguracion.TabStop = false;
             this.GbConfiguracion.Text = "Configuracion";
+            // 
+            // BtnAceptar
+            // 
+            this.BtnAceptar.Location = new System.Drawing.Point(29, 104);
+            this.BtnAceptar.Name = "BtnAceptar";
+            this.BtnAceptar.Size = new System.Drawing.Size(92, 53);
+            this.BtnAceptar.TabIndex = 20;
+            this.BtnAceptar.Text = "Aceptar";
+            this.BtnAceptar.UseVisualStyleBackColor = false;
+            // 
+            // CmbxRegion
+            // 
+            this.CmbxRegion.FormattingEnabled = true;
+            this.CmbxRegion.Items.AddRange(new object[] {
+            "Los Hornos",
+            "La plata",
+            "Escuela 46"});
+            this.CmbxRegion.Location = new System.Drawing.Point(103, 39);
+            this.CmbxRegion.Name = "CmbxRegion";
+            this.CmbxRegion.Size = new System.Drawing.Size(190, 28);
+            this.CmbxRegion.TabIndex = 19;
             // 
             // LRegion
             // 
@@ -71,32 +93,11 @@
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // CmbxRegion
-            // 
-            this.CmbxRegion.FormattingEnabled = true;
-            this.CmbxRegion.Items.AddRange(new object[] {
-            "Los Hornos",
-            "La plata",
-            "Escuela 46"});
-            this.CmbxRegion.Location = new System.Drawing.Point(103, 39);
-            this.CmbxRegion.Name = "CmbxRegion";
-            this.CmbxRegion.Size = new System.Drawing.Size(190, 28);
-            this.CmbxRegion.TabIndex = 19;
-            // 
-            // BtnAceptar
-            // 
-            this.BtnAceptar.Location = new System.Drawing.Point(29, 104);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(92, 53);
-            this.BtnAceptar.TabIndex = 20;
-            this.BtnAceptar.Text = "Aceptar";
-            this.BtnAceptar.UseVisualStyleBackColor = false;
-            // 
             // FrmConfiguracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(342, 193);
             this.Controls.Add(this.GbConfiguracion);

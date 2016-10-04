@@ -142,13 +142,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(446, 289);
             this.ControlBox = false;
             this.Controls.Add(this.GbRegion);
             this.Name = "FrmABMRegiones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regiones";
+            this.Load += new System.EventHandler(this.FrmABMRegiones_Load);
             this.GbRegion.ResumeLayout(false);
             this.GbRegion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

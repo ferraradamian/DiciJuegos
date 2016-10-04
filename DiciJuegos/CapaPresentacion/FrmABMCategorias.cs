@@ -147,5 +147,10 @@ namespace CapaPresentacion
             }
             
         }
+
+        private void GbCategoria_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

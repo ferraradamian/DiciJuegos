@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.GbPalabra = new System.Windows.Forms.GroupBox();
+            this.BtnModulacion = new System.Windows.Forms.Button();
+            this.BtnSeña = new System.Windows.Forms.Button();
+            this.BtnBuscarImg = new System.Windows.Forms.Button();
             this.PctbxPalabra = new System.Windows.Forms.PictureBox();
             this.TxtModulacion = new System.Windows.Forms.TextBox();
             this.TxtSeña = new System.Windows.Forms.TextBox();
@@ -48,15 +51,13 @@
             this.BtEliminar = new System.Windows.Forms.Button();
             this.BtModificar = new System.Windows.Forms.Button();
             this.BtAgregar = new System.Windows.Forms.Button();
-            this.BtnBuscarImg = new System.Windows.Forms.Button();
-            this.BtnSeña = new System.Windows.Forms.Button();
-            this.BtnModulacion = new System.Windows.Forms.Button();
             this.GbPalabra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctbxPalabra)).BeginInit();
             this.SuspendLayout();
             // 
             // GbPalabra
             // 
+            this.GbPalabra.BackColor = System.Drawing.Color.Black;
             this.GbPalabra.Controls.Add(this.BtnModulacion);
             this.GbPalabra.Controls.Add(this.BtnSeña);
             this.GbPalabra.Controls.Add(this.BtnBuscarImg);
@@ -89,6 +90,36 @@
             this.GbPalabra.TabStop = false;
             this.GbPalabra.Text = "Palabras";
             this.GbPalabra.Enter += new System.EventHandler(this.GbPalabra_Enter);
+            // 
+            // BtnModulacion
+            // 
+            this.BtnModulacion.Location = new System.Drawing.Point(362, 224);
+            this.BtnModulacion.Name = "BtnModulacion";
+            this.BtnModulacion.Size = new System.Drawing.Size(101, 31);
+            this.BtnModulacion.TabIndex = 34;
+            this.BtnModulacion.Text = "Examinar";
+            this.BtnModulacion.UseVisualStyleBackColor = false;
+            this.BtnModulacion.Click += new System.EventHandler(this.BtnModulacion_Click);
+            // 
+            // BtnSeña
+            // 
+            this.BtnSeña.Location = new System.Drawing.Point(362, 184);
+            this.BtnSeña.Name = "BtnSeña";
+            this.BtnSeña.Size = new System.Drawing.Size(101, 31);
+            this.BtnSeña.TabIndex = 33;
+            this.BtnSeña.Text = "Examinar";
+            this.BtnSeña.UseVisualStyleBackColor = false;
+            this.BtnSeña.Click += new System.EventHandler(this.BtnSeña_Click);
+            // 
+            // BtnBuscarImg
+            // 
+            this.BtnBuscarImg.Location = new System.Drawing.Point(362, 146);
+            this.BtnBuscarImg.Name = "BtnBuscarImg";
+            this.BtnBuscarImg.Size = new System.Drawing.Size(101, 31);
+            this.BtnBuscarImg.TabIndex = 32;
+            this.BtnBuscarImg.Text = "Examinar";
+            this.BtnBuscarImg.UseVisualStyleBackColor = false;
+            this.BtnBuscarImg.Click += new System.EventHandler(this.BtnBuscarImg_Click);
             // 
             // PctbxPalabra
             // 
@@ -261,36 +292,6 @@
             this.BtAgregar.TabIndex = 8;
             this.BtAgregar.Text = "Agregar";
             this.BtAgregar.UseVisualStyleBackColor = false;
-            // 
-            // BtnBuscarImg
-            // 
-            this.BtnBuscarImg.Location = new System.Drawing.Point(362, 146);
-            this.BtnBuscarImg.Name = "BtnBuscarImg";
-            this.BtnBuscarImg.Size = new System.Drawing.Size(101, 31);
-            this.BtnBuscarImg.TabIndex = 32;
-            this.BtnBuscarImg.Text = "Examinar";
-            this.BtnBuscarImg.UseVisualStyleBackColor = false;
-            this.BtnBuscarImg.Click += new System.EventHandler(this.BtnBuscarImg_Click);
-            // 
-            // BtnSeña
-            // 
-            this.BtnSeña.Location = new System.Drawing.Point(362, 184);
-            this.BtnSeña.Name = "BtnSeña";
-            this.BtnSeña.Size = new System.Drawing.Size(101, 31);
-            this.BtnSeña.TabIndex = 33;
-            this.BtnSeña.Text = "Examinar";
-            this.BtnSeña.UseVisualStyleBackColor = false;
-            this.BtnSeña.Click += new System.EventHandler(this.BtnSeña_Click);
-            // 
-            // BtnModulacion
-            // 
-            this.BtnModulacion.Location = new System.Drawing.Point(362, 224);
-            this.BtnModulacion.Name = "BtnModulacion";
-            this.BtnModulacion.Size = new System.Drawing.Size(101, 31);
-            this.BtnModulacion.TabIndex = 34;
-            this.BtnModulacion.Text = "Examinar";
-            this.BtnModulacion.UseVisualStyleBackColor = false;
-            this.BtnModulacion.Click += new System.EventHandler(this.BtnModulacion_Click);
             // 
             // FrmABMPalabras
             // 

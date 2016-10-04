@@ -124,7 +124,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnCancelar.BackColor = System.Drawing.Color.Black;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnCancelar.Location = new System.Drawing.Point(219, 276);
@@ -138,7 +138,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnEntrar.BackColor = System.Drawing.Color.Black;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnEntrar.Location = new System.Drawing.Point(32, 276);
@@ -152,6 +152,7 @@
             // 
             // GbLogin
             // 
+            this.GbLogin.BackColor = System.Drawing.Color.Black;
             this.GbLogin.Controls.Add(this.pictureBox1);
             this.GbLogin.Controls.Add(this.CBPerfil);
             this.GbLogin.Controls.Add(this.btnEntrar);

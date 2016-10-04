@@ -43,6 +43,7 @@
             // 
             // GbCategoria
             // 
+            this.GbCategoria.BackColor = System.Drawing.Color.Black;
             this.GbCategoria.Controls.Add(this.pictureBox1);
             this.GbCategoria.Controls.Add(this.ChlbCategorias);
             this.GbCategoria.Controls.Add(this.TxtCategoria);
@@ -59,6 +60,7 @@
             this.GbCategoria.TabIndex = 9;
             this.GbCategoria.TabStop = false;
             this.GbCategoria.Text = "Categorias";
+            this.GbCategoria.Enter += new System.EventHandler(this.GbCategoria_Enter);
             // 
             // pictureBox1
             // 

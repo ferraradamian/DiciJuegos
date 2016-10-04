@@ -148,5 +148,9 @@ namespace CapaPresentacion
 
         }
 
+        private void FrmABMRegiones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

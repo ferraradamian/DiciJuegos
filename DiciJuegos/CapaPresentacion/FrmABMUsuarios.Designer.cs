@@ -120,6 +120,7 @@
             // 
             // GbUsuarios
             // 
+            this.GbUsuarios.BackColor = System.Drawing.Color.Black;
             this.GbUsuarios.Controls.Add(this.LbCodigo);
             this.GbUsuarios.Controls.Add(this.txtCodigo);
             this.GbUsuarios.Controls.Add(this.panel2);
