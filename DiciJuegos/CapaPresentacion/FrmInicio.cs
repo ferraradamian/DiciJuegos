@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//comentario fer prueba
+
 namespace CapaPresentacion
 {
     public partial class FrmInicio : Form
