@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JuegoRana));
             this.PtrBxMosca = new System.Windows.Forms.PictureBox();
             this.PtrBxRana = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -43,7 +44,7 @@
             // 
             this.PtrBxMosca.BackColor = System.Drawing.Color.Transparent;
             this.PtrBxMosca.Image = global::CapaPresentacion.Properties.Resources.Mosca;
-            this.PtrBxMosca.Location = new System.Drawing.Point(223, 172);
+            this.PtrBxMosca.Location = new System.Drawing.Point(494, 319);
             this.PtrBxMosca.Name = "PtrBxMosca";
             this.PtrBxMosca.Size = new System.Drawing.Size(55, 55);
             this.PtrBxMosca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -54,9 +55,9 @@
             // 
             this.PtrBxRana.Image = global::CapaPresentacion.Properties.Resources.Rana;
             this.PtrBxRana.InitialImage = null;
-            this.PtrBxRana.Location = new System.Drawing.Point(0, 123);
+            this.PtrBxRana.Location = new System.Drawing.Point(77, 288);
             this.PtrBxRana.Name = "PtrBxRana";
-            this.PtrBxRana.Size = new System.Drawing.Size(217, 220);
+            this.PtrBxRana.Size = new System.Drawing.Size(174, 163);
             this.PtrBxRana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PtrBxRana.TabIndex = 1;
             this.PtrBxRana.TabStop = false;
@@ -80,26 +81,30 @@
             // 
             // Pb1
             // 
-            this.Pb1.BackColor = System.Drawing.Color.Red;
-            this.Pb1.Location = new System.Drawing.Point(0, 189);
+            this.Pb1.BackColor = System.Drawing.Color.Transparent;
+            this.Pb1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pb1.BackgroundImage")));
+            this.Pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pb1.Location = new System.Drawing.Point(248, 336);
             this.Pb1.Name = "Pb1";
-            this.Pb1.Size = new System.Drawing.Size(217, 26);
+            this.Pb1.Size = new System.Drawing.Size(156, 38);
             this.Pb1.TabIndex = 5;
             this.Pb1.TabStop = false;
+            this.Pb1.Click += new System.EventHandler(this.Pb1_Click);
             // 
             // JuegoRana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LimeGreen;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Controls.Add(this.LbPuntos);
-            this.Controls.Add(this.PtrBxRana);
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.Pb1);
+            this.Controls.Add(this.PtrBxRana);
+            this.Controls.Add(this.LbPuntos);
             this.Controls.Add(this.PtrBxMosca);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "JuegoRana";
-            this.Size = new System.Drawing.Size(900, 600);
+            this.Size = new System.Drawing.Size(1023, 520);
             ((System.ComponentModel.ISupportInitialize)(this.PtrBxMosca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtrBxRana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb1)).EndInit();

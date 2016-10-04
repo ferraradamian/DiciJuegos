@@ -81,5 +81,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void Pb1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
