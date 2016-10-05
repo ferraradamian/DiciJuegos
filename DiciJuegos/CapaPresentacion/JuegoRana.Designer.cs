@@ -44,7 +44,7 @@
             // 
             this.PtrBxMosca.BackColor = System.Drawing.Color.Transparent;
             this.PtrBxMosca.Image = global::CapaPresentacion.Properties.Resources.Mosca;
-            this.PtrBxMosca.Location = new System.Drawing.Point(494, 319);
+            this.PtrBxMosca.Location = new System.Drawing.Point(454, 319);
             this.PtrBxMosca.Name = "PtrBxMosca";
             this.PtrBxMosca.Size = new System.Drawing.Size(55, 55);
             this.PtrBxMosca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
