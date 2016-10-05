@@ -86,5 +86,11 @@ namespace CapaPresentacion
         {
             this.PContenedor.Controls.Clear();
         }
+
+        private void juegosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

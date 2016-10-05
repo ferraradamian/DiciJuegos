@@ -45,6 +45,7 @@
             this.CreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBUtnFooter = new System.Windows.Forms.PictureBox();
             this.PContenedor = new System.Windows.Forms.Panel();
+            this.probarMiVozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TLPFondoInicio.SuspendLayout();
             this.MSInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBUtnFooter)).BeginInit();
@@ -101,28 +102,28 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // palabrasToolStripMenuItem
             // 
             this.palabrasToolStripMenuItem.Name = "palabrasToolStripMenuItem";
-            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.palabrasToolStripMenuItem.Text = "Palabras";
             this.palabrasToolStripMenuItem.Click += new System.EventHandler(this.palabrasToolStripMenuItem_Click);
             // 
             // categoriaToolStripMenuItem
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.categoriaToolStripMenuItem.Text = "Categorias";
             this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
             // 
             // regionesToolStripMenuItem
             // 
             this.regionesToolStripMenuItem.Name = "regionesToolStripMenuItem";
-            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.regionesToolStripMenuItem.Text = "Regiones";
             this.regionesToolStripMenuItem.Click += new System.EventHandler(this.regionesToolStripMenuItem_Click);
             // 
@@ -146,11 +147,13 @@
             // 
             this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ranaToolStripMenuItem,
-            this.autosToolStripMenuItem});
+            this.autosToolStripMenuItem,
+            this.probarMiVozToolStripMenuItem});
             this.juegosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
-            this.juegosToolStripMenuItem.Size = new System.Drawing.Size(63, 21);
-            this.juegosToolStripMenuItem.Text = "Juegos";
+            this.juegosToolStripMenuItem.Size = new System.Drawing.Size(144, 21);
+            this.juegosToolStripMenuItem.Text = "Juegos y Utiliidades";
+            this.juegosToolStripMenuItem.Click += new System.EventHandler(this.juegosToolStripMenuItem_Click);
             // 
             // ranaToolStripMenuItem
             // 
@@ -211,6 +214,13 @@
             this.PContenedor.TabIndex = 2;
             this.PContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PContenedor_Paint);
             // 
+            // probarMiVozToolStripMenuItem
+            // 
+            this.probarMiVozToolStripMenuItem.Name = "probarMiVozToolStripMenuItem";
+            this.probarMiVozToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.probarMiVozToolStripMenuItem.Text = "Probar mi voz";
+            this.probarMiVozToolStripMenuItem.Click += new System.EventHandler(this.probarMiVozToolStripMenuItem_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,5 +260,6 @@
         private System.Windows.Forms.ToolStripMenuItem juegosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ranaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem probarMiVozToolStripMenuItem;
     }
 }
