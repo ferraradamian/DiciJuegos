@@ -44,7 +44,7 @@
             // 
             this.PtrBxMosca.BackColor = System.Drawing.Color.Transparent;
             this.PtrBxMosca.Image = global::CapaPresentacion.Properties.Resources.Mosca;
-            this.PtrBxMosca.Location = new System.Drawing.Point(494, 319);
+            this.PtrBxMosca.Location = new System.Drawing.Point(462, 320);
             this.PtrBxMosca.Name = "PtrBxMosca";
             this.PtrBxMosca.Size = new System.Drawing.Size(55, 55);
             this.PtrBxMosca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -55,13 +55,12 @@
             // 
             this.PtrBxRana.Image = global::CapaPresentacion.Properties.Resources.Rana;
             this.PtrBxRana.InitialImage = null;
-            this.PtrBxRana.Location = new System.Drawing.Point(77, 288);
+            this.PtrBxRana.Location = new System.Drawing.Point(76, 290);
             this.PtrBxRana.Name = "PtrBxRana";
             this.PtrBxRana.Size = new System.Drawing.Size(174, 163);
             this.PtrBxRana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PtrBxRana.TabIndex = 1;
             this.PtrBxRana.TabStop = false;
-            this.PtrBxRana.Click += new System.EventHandler(this.PtrBxRana_Click);
             // 
             // timer1
             // 
@@ -89,7 +88,6 @@
             this.Pb1.Size = new System.Drawing.Size(156, 38);
             this.Pb1.TabIndex = 5;
             this.Pb1.TabStop = false;
-            this.Pb1.Click += new System.EventHandler(this.Pb1_Click);
             // 
             // JuegoRana
             // 
