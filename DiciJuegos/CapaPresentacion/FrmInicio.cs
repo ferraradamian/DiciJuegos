@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//comentario fer prueba
-// comentrario de martin = ANDA!!
-
 namespace CapaPresentacion
 {
     public partial class FrmInicio : Form
