@@ -154,7 +154,6 @@
             this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
             this.juegosToolStripMenuItem.Size = new System.Drawing.Size(144, 21);
             this.juegosToolStripMenuItem.Text = "Juegos y Utiliidades";
-            this.juegosToolStripMenuItem.Click += new System.EventHandler(this.juegosToolStripMenuItem_Click);
             // 
             // ranaToolStripMenuItem
             // 
@@ -221,6 +220,13 @@
             this.PContenedor.Size = new System.Drawing.Size(899, 562);
             this.PContenedor.TabIndex = 2;
             this.PContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PContenedor_Paint);
+            // 
+            // probarMiVozToolStripMenuItem
+            // 
+            this.probarMiVozToolStripMenuItem.Name = "probarMiVozToolStripMenuItem";
+            this.probarMiVozToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.probarMiVozToolStripMenuItem.Text = "Probar mi voz";
+            this.probarMiVozToolStripMenuItem.Click += new System.EventHandler(this.probarMiVozToolStripMenuItem_Click);
             // 
             // FrmInicio
             // 

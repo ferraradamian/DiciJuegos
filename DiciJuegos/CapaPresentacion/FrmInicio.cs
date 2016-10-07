@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//comentario fer prueba
-// comentrario de martin = ANDA!!
-
 namespace CapaPresentacion
 {
     public partial class FrmInicio : Form
@@ -92,14 +89,5 @@ namespace CapaPresentacion
 
         }
 
-        private void PBUtnFooter_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TLPFondoInicio_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

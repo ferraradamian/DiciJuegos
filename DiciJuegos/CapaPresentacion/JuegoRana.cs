@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Recognition;
 using System.IO;
+using System.Threading;
 
 namespace CapaPresentacion
 {
@@ -58,7 +59,8 @@ namespace CapaPresentacion
         public void movimientoMosca()
         {
             Random rnd = new Random();
-            int posX = rnd.Next(223, 600);
+            int posX = rnd.Next(248, 600);
+            Thread.Sleep(800);
             PtrBxMosca.Location = new Point(posX, PtrBxMosca.Location.Y);
         }
 
@@ -69,22 +71,12 @@ namespace CapaPresentacion
 
         private void timer1_Tick(object sender, EventArgs e)
         {       
-            if (Pb1.Size.Width > PtrBxMosca.Location.X && Pb1.Size.Width < PtrBxMosca.Location.X + 55)
+            if (Pb1.Size.Width + 248 > PtrBxMosca.Location.X && Pb1.Size.Width + 248 < PtrBxMosca.Location.X + 55)
             {
                 movimientoMosca();
                 puntos ++;
                 LbPuntos.Text = "Puntos: " + puntos.ToString();
             }
-        }
-
-        private void PtrBxRana_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Pb1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
