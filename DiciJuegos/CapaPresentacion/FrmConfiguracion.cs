@@ -21,5 +21,20 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void GbConfiguracion_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LRegion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

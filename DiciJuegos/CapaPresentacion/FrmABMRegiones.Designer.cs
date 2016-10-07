@@ -43,6 +43,7 @@
             // 
             // GbRegion
             // 
+            this.GbRegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GbRegion.Controls.Add(this.pictureBox1);
             this.GbRegion.Controls.Add(this.ChlbRegiones);
             this.GbRegion.Controls.Add(this.txtRegion);
@@ -52,7 +53,7 @@
             this.GbRegion.Controls.Add(this.BtModificar);
             this.GbRegion.Controls.Add(this.BtAgregar);
             this.GbRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbRegion.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GbRegion.ForeColor = System.Drawing.Color.Black;
             this.GbRegion.Location = new System.Drawing.Point(7, 7);
             this.GbRegion.Name = "GbRegion";
             this.GbRegion.Size = new System.Drawing.Size(425, 274);
@@ -91,6 +92,7 @@
             // LbRegion
             // 
             this.LbRegion.AutoSize = true;
+            this.LbRegion.ForeColor = System.Drawing.Color.Black;
             this.LbRegion.Location = new System.Drawing.Point(25, 37);
             this.LbRegion.Name = "LbRegion";
             this.LbRegion.Size = new System.Drawing.Size(71, 20);
@@ -100,6 +102,7 @@
             // 
             // BtSalir
             // 
+            this.BtSalir.ForeColor = System.Drawing.Color.Black;
             this.BtSalir.Location = new System.Drawing.Point(320, 204);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(92, 53);
@@ -110,6 +113,7 @@
             // 
             // BtEliminar
             // 
+            this.BtEliminar.ForeColor = System.Drawing.Color.Black;
             this.BtEliminar.Location = new System.Drawing.Point(222, 204);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Size = new System.Drawing.Size(92, 53);
@@ -120,6 +124,7 @@
             // 
             // BtModificar
             // 
+            this.BtModificar.ForeColor = System.Drawing.Color.Black;
             this.BtModificar.Location = new System.Drawing.Point(123, 204);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Size = new System.Drawing.Size(92, 53);
@@ -130,6 +135,7 @@
             // 
             // BtAgregar
             // 
+            this.BtAgregar.ForeColor = System.Drawing.Color.Black;
             this.BtAgregar.Location = new System.Drawing.Point(17, 204);
             this.BtAgregar.Name = "BtAgregar";
             this.BtAgregar.Size = new System.Drawing.Size(92, 53);

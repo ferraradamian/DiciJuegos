@@ -92,5 +92,14 @@ namespace CapaPresentacion
 
         }
 
+        private void PBUtnFooter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TLPFondoInicio_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
