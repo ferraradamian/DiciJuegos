@@ -48,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(28, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(28, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 20);
@@ -91,7 +91,7 @@
             this.LBPerfil.AutoSize = true;
             this.LBPerfil.BackColor = System.Drawing.Color.Transparent;
             this.LBPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBPerfil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LBPerfil.ForeColor = System.Drawing.Color.Black;
             this.LBPerfil.Location = new System.Drawing.Point(28, 157);
             this.LBPerfil.Name = "LBPerfil";
             this.LBPerfil.Size = new System.Drawing.Size(55, 20);
@@ -124,9 +124,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Location = new System.Drawing.Point(219, 276);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -138,9 +138,9 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.Black;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEntrar.ForeColor = System.Drawing.Color.Black;
             this.btnEntrar.Location = new System.Drawing.Point(32, 276);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -152,7 +152,7 @@
             // 
             // GbLogin
             // 
-            this.GbLogin.BackColor = System.Drawing.Color.Black;
+            this.GbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GbLogin.Controls.Add(this.pictureBox1);
             this.GbLogin.Controls.Add(this.CBPerfil);
             this.GbLogin.Controls.Add(this.btnEntrar);
@@ -163,7 +163,7 @@
             this.GbLogin.Controls.Add(this.label2);
             this.GbLogin.Controls.Add(this.txtUsuario);
             this.GbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbLogin.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GbLogin.ForeColor = System.Drawing.Color.Black;
             this.GbLogin.Location = new System.Drawing.Point(4, 4);
             this.GbLogin.Name = "GbLogin";
             this.GbLogin.Size = new System.Drawing.Size(333, 352);

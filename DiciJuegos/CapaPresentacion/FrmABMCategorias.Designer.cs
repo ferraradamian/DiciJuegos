@@ -43,7 +43,7 @@
             // 
             // GbCategoria
             // 
-            this.GbCategoria.BackColor = System.Drawing.Color.Black;
+            this.GbCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GbCategoria.Controls.Add(this.pictureBox1);
             this.GbCategoria.Controls.Add(this.ChlbCategorias);
             this.GbCategoria.Controls.Add(this.TxtCategoria);

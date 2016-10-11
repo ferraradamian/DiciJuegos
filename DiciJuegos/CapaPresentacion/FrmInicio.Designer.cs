@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ToolStripMenuItem aBMsToolStripMenuItem;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
-            this.palabrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TLPFondoInicio = new System.Windows.Forms.TableLayoutPanel();
             this.MSInicio = new System.Windows.Forms.MenuStrip();
             this.diccionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adivinarPalabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.palabrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ranaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,6 @@
             this.CreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBUtnFooter = new System.Windows.Forms.PictureBox();
             this.PContenedor = new System.Windows.Forms.Panel();
-            aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TLPFondoInicio.SuspendLayout();
             this.MSInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBUtnFooter)).BeginInit();
@@ -108,7 +107,7 @@
             // 
             // TLPFondoInicio
             // 
-            this.TLPFondoInicio.BackColor = System.Drawing.Color.Transparent;
+            this.TLPFondoInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TLPFondoInicio.ColumnCount = 1;
             this.TLPFondoInicio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPFondoInicio.Controls.Add(this.MSInicio, 0, 0);
@@ -120,17 +119,18 @@
             this.TLPFondoInicio.RowCount = 3;
             this.TLPFondoInicio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.TLPFondoInicio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TLPFondoInicio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.TLPFondoInicio.Size = new System.Drawing.Size(905, 643);
+            this.TLPFondoInicio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.TLPFondoInicio.Size = new System.Drawing.Size(905, 665);
             this.TLPFondoInicio.TabIndex = 0;
+            this.TLPFondoInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.TLPFondoInicio_Paint);
             // 
             // MSInicio
             // 
-            this.MSInicio.BackColor = System.Drawing.Color.Transparent;
+            this.MSInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.MSInicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MSInicio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            aBMsToolStripMenuItem,
             this.diccionarioToolStripMenuItem,
+            this.aBMsToolStripMenuItem,
             this.juegosToolStripMenuItem,
             this.loginToolStripMenuItem,
             this.configuracToolStripMenuItem,
@@ -143,10 +143,9 @@
             // 
             // diccionarioToolStripMenuItem
             // 
-            this.diccionarioToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("diccionarioToolStripMenuItem.BackgroundImage")));
             this.diccionarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adivinarPalabraToolStripMenuItem});
-            this.diccionarioToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.diccionarioToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.diccionarioToolStripMenuItem.Name = "diccionarioToolStripMenuItem";
             this.diccionarioToolStripMenuItem.Size = new System.Drawing.Size(90, 21);
             this.diccionarioToolStripMenuItem.Text = "Diccionario";
@@ -158,6 +157,47 @@
             this.adivinarPalabraToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.adivinarPalabraToolStripMenuItem.Text = "Adivinar Palabra";
             // 
+            // aBMsToolStripMenuItem
+            // 
+            this.aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.palabrasToolStripMenuItem,
+            this.categoriaToolStripMenuItem,
+            this.regionesToolStripMenuItem});
+            this.aBMsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
+            this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
+            this.aBMsToolStripMenuItem.Text = "ABMs";
+            this.aBMsToolStripMenuItem.Click += new System.EventHandler(this.aBMsToolStripMenuItem_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // palabrasToolStripMenuItem
+            // 
+            this.palabrasToolStripMenuItem.Name = "palabrasToolStripMenuItem";
+            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.palabrasToolStripMenuItem.Text = "Palabras";
+            this.palabrasToolStripMenuItem.Click += new System.EventHandler(this.palabrasToolStripMenuItem_Click);
+            // 
+            // categoriaToolStripMenuItem
+            // 
+            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.categoriaToolStripMenuItem.Text = "Categorias";
+            this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
+            // 
+            // regionesToolStripMenuItem
+            // 
+            this.regionesToolStripMenuItem.Name = "regionesToolStripMenuItem";
+            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.regionesToolStripMenuItem.Text = "Regiones";
+            this.regionesToolStripMenuItem.Click += new System.EventHandler(this.regionesToolStripMenuItem_Click);
+            // 
             // juegosToolStripMenuItem
             // 
             this.juegosToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("juegosToolStripMenuItem.BackgroundImage")));
@@ -165,7 +205,7 @@
             this.ranaToolStripMenuItem,
             this.autosToolStripMenuItem,
             this.probarMiVozToolStripMenuItem});
-            this.juegosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.juegosToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
             this.juegosToolStripMenuItem.Size = new System.Drawing.Size(144, 21);
             this.juegosToolStripMenuItem.Text = "Juegos y Utiliidades";
@@ -191,8 +231,7 @@
             // 
             // loginToolStripMenuItem
             // 
-            this.loginToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("loginToolStripMenuItem.BackgroundImage")));
-            this.loginToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.loginToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
             this.loginToolStripMenuItem.Text = "Login";
@@ -200,8 +239,7 @@
             // 
             // configuracToolStripMenuItem
             // 
-            this.configuracToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("configuracToolStripMenuItem.BackgroundImage")));
-            this.configuracToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.configuracToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.configuracToolStripMenuItem.Name = "configuracToolStripMenuItem";
             this.configuracToolStripMenuItem.Size = new System.Drawing.Size(107, 21);
             this.configuracToolStripMenuItem.Text = "Configuración";
@@ -209,8 +247,7 @@
             // 
             // CreditoToolStripMenuItem
             // 
-            this.CreditoToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CreditoToolStripMenuItem.BackgroundImage")));
-            this.CreditoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.CreditoToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.CreditoToolStripMenuItem.Name = "CreditoToolStripMenuItem";
             this.CreditoToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
             this.CreditoToolStripMenuItem.Text = "Creditos";
@@ -221,12 +258,13 @@
             this.PBUtnFooter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.PBUtnFooter.BackColor = System.Drawing.Color.Transparent;
             this.PBUtnFooter.Image = global::CapaPresentacion.Properties.Resources.Logo_UTN;
-            this.PBUtnFooter.Location = new System.Drawing.Point(716, 604);
+            this.PBUtnFooter.Location = new System.Drawing.Point(610, 603);
             this.PBUtnFooter.Name = "PBUtnFooter";
-            this.PBUtnFooter.Size = new System.Drawing.Size(186, 36);
+            this.PBUtnFooter.Size = new System.Drawing.Size(292, 59);
             this.PBUtnFooter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PBUtnFooter.TabIndex = 1;
             this.PBUtnFooter.TabStop = false;
+            this.PBUtnFooter.Click += new System.EventHandler(this.PBUtnFooter_Click);
             // 
             // PContenedor
             // 
@@ -235,16 +273,22 @@
             this.PContenedor.ForeColor = System.Drawing.Color.White;
             this.PContenedor.Location = new System.Drawing.Point(3, 32);
             this.PContenedor.Name = "PContenedor";
-            this.PContenedor.Size = new System.Drawing.Size(899, 566);
+            this.PContenedor.Size = new System.Drawing.Size(899, 562);
             this.PContenedor.TabIndex = 2;
             this.PContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PContenedor_Paint);
+            // 
+            // probarMiVozToolStripMenuItem
+            // 
+            this.probarMiVozToolStripMenuItem.Name = "probarMiVozToolStripMenuItem";
+            this.probarMiVozToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.probarMiVozToolStripMenuItem.Text = "Probar mi voz";
+            this.probarMiVozToolStripMenuItem.Click += new System.EventHandler(this.probarMiVozToolStripMenuItem_Click);
             // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
-            this.ClientSize = new System.Drawing.Size(905, 643);
+            this.ClientSize = new System.Drawing.Size(905, 665);
             this.Controls.Add(this.TLPFondoInicio);
             this.MainMenuStrip = this.MSInicio;
             this.MinimumSize = new System.Drawing.Size(921, 682);

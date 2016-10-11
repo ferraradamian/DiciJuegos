@@ -87,7 +87,7 @@
             // 
             // BtnSeña
             // 
-            this.BtnSeña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSeña.ForeColor = System.Drawing.Color.Black;
             this.BtnSeña.Location = new System.Drawing.Point(362, 184);
             this.BtnSeña.Name = "BtnSeña";
             this.BtnSeña.Size = new System.Drawing.Size(101, 31);
@@ -98,7 +98,7 @@
             // 
             // BtnBuscarImg
             // 
-            this.BtnBuscarImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscarImg.ForeColor = System.Drawing.Color.Black;
             this.BtnBuscarImg.Location = new System.Drawing.Point(362, 146);
             this.BtnBuscarImg.Name = "BtnBuscarImg";
             this.BtnBuscarImg.Size = new System.Drawing.Size(101, 31);
@@ -151,6 +151,7 @@
             // lblSeña
             // 
             this.lblSeña.AutoSize = true;
+            this.lblSeña.ForeColor = System.Drawing.Color.Black;
             this.lblSeña.Location = new System.Drawing.Point(12, 189);
             this.lblSeña.Name = "lblSeña";
             this.lblSeña.Size = new System.Drawing.Size(56, 20);
@@ -160,6 +161,7 @@
             // LblImagen
             // 
             this.LblImagen.AutoSize = true;
+            this.LblImagen.ForeColor = System.Drawing.Color.Black;
             this.LblImagen.Location = new System.Drawing.Point(7, 151);
             this.LblImagen.Name = "LblImagen";
             this.LblImagen.Size = new System.Drawing.Size(74, 20);
@@ -169,6 +171,7 @@
             // LblDefinicion
             // 
             this.LblDefinicion.AutoSize = true;
+            this.LblDefinicion.ForeColor = System.Drawing.Color.Black;
             this.LblDefinicion.Location = new System.Drawing.Point(11, 73);
             this.LblDefinicion.Name = "LblDefinicion";
             this.LblDefinicion.Size = new System.Drawing.Size(94, 20);
@@ -178,6 +181,7 @@
             // LblPalabra
             // 
             this.LblPalabra.AutoSize = true;
+            this.LblPalabra.ForeColor = System.Drawing.Color.Black;
             this.LblPalabra.Location = new System.Drawing.Point(12, 35);
             this.LblPalabra.Name = "LblPalabra";
             this.LblPalabra.Size = new System.Drawing.Size(75, 20);
@@ -197,7 +201,8 @@
             // LbCategoria
             // 
             this.LbCategoria.AutoSize = true;
-            this.LbCategoria.Location = new System.Drawing.Point(285, 228);
+            this.LbCategoria.ForeColor = System.Drawing.Color.Black;
+            this.LbCategoria.Location = new System.Drawing.Point(284, 267);
             this.LbCategoria.Name = "LbCategoria";
             this.LbCategoria.Size = new System.Drawing.Size(92, 20);
             this.LbCategoria.TabIndex = 19;
@@ -217,7 +222,8 @@
             // LbRegion
             // 
             this.LbRegion.AutoSize = true;
-            this.LbRegion.Location = new System.Drawing.Point(10, 228);
+            this.LbRegion.ForeColor = System.Drawing.Color.Black;
+            this.LbRegion.Location = new System.Drawing.Point(9, 267);
             this.LbRegion.Name = "LbRegion";
             this.LbRegion.Size = new System.Drawing.Size(71, 20);
             this.LbRegion.TabIndex = 18;
@@ -226,8 +232,8 @@
             // 
             // BtSalir
             // 
-            this.BtSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtSalir.Location = new System.Drawing.Point(404, 377);
+            this.BtSalir.ForeColor = System.Drawing.Color.Black;
+            this.BtSalir.Location = new System.Drawing.Point(403, 416);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(92, 53);
             this.BtSalir.TabIndex = 11;
@@ -237,8 +243,8 @@
             // 
             // BtEliminar
             // 
-            this.BtEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtEliminar.Location = new System.Drawing.Point(283, 379);
+            this.BtEliminar.ForeColor = System.Drawing.Color.Black;
+            this.BtEliminar.Location = new System.Drawing.Point(282, 418);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Size = new System.Drawing.Size(92, 53);
             this.BtEliminar.TabIndex = 10;
@@ -248,8 +254,8 @@
             // 
             // BtModificar
             // 
-            this.BtModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtModificar.Location = new System.Drawing.Point(161, 377);
+            this.BtModificar.ForeColor = System.Drawing.Color.Black;
+            this.BtModificar.Location = new System.Drawing.Point(160, 416);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Size = new System.Drawing.Size(92, 53);
             this.BtModificar.TabIndex = 9;
@@ -259,8 +265,8 @@
             // 
             // BtAgregar
             // 
-            this.BtAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtAgregar.Location = new System.Drawing.Point(43, 377);
+            this.BtAgregar.ForeColor = System.Drawing.Color.Black;
+            this.BtAgregar.Location = new System.Drawing.Point(42, 416);
             this.BtAgregar.Name = "BtAgregar";
             this.BtAgregar.Size = new System.Drawing.Size(92, 53);
             this.BtAgregar.TabIndex = 8;

@@ -38,28 +38,32 @@
             // 
             // GbConfiguracion
             // 
-            this.GbConfiguracion.BackColor = System.Drawing.Color.Black;
+            this.GbConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GbConfiguracion.Controls.Add(this.BtnAceptar);
             this.GbConfiguracion.Controls.Add(this.CmbxRegion);
             this.GbConfiguracion.Controls.Add(this.LRegion);
             this.GbConfiguracion.Controls.Add(this.BtnCancelar);
             this.GbConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbConfiguracion.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GbConfiguracion.ForeColor = System.Drawing.Color.Black;
             this.GbConfiguracion.Location = new System.Drawing.Point(12, 12);
             this.GbConfiguracion.Name = "GbConfiguracion";
             this.GbConfiguracion.Size = new System.Drawing.Size(324, 173);
             this.GbConfiguracion.TabIndex = 10;
             this.GbConfiguracion.TabStop = false;
             this.GbConfiguracion.Text = "Configuracion";
+            this.GbConfiguracion.Enter += new System.EventHandler(this.GbConfiguracion_Enter);
             // 
             // BtnAceptar
             // 
+            this.BtnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnAceptar.ForeColor = System.Drawing.Color.Black;
             this.BtnAceptar.Location = new System.Drawing.Point(29, 104);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(92, 53);
             this.BtnAceptar.TabIndex = 20;
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.UseVisualStyleBackColor = false;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // CmbxRegion
             // 
@@ -76,15 +80,20 @@
             // LRegion
             // 
             this.LRegion.AutoSize = true;
+            this.LRegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LRegion.ForeColor = System.Drawing.Color.Black;
             this.LRegion.Location = new System.Drawing.Point(25, 41);
             this.LRegion.Name = "LRegion";
             this.LRegion.Size = new System.Drawing.Size(71, 20);
             this.LRegion.TabIndex = 18;
             this.LRegion.Text = "Region:";
             this.LRegion.UseWaitCursor = true;
+            this.LRegion.Click += new System.EventHandler(this.LRegion_Click);
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.Black;
             this.BtnCancelar.Location = new System.Drawing.Point(201, 104);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(92, 53);

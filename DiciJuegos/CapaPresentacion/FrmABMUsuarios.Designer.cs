@@ -61,7 +61,7 @@
             // 
             this.LBNombre.AutoSize = true;
             this.LBNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LBNombre.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.LBNombre.ForeColor = System.Drawing.Color.Black;
             this.LBNombre.Location = new System.Drawing.Point(25, 205);
             this.LBNombre.Name = "LBNombre";
             this.LBNombre.Size = new System.Drawing.Size(69, 20);
@@ -72,7 +72,7 @@
             // 
             this.LBContraseña.AutoSize = true;
             this.LBContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LBContraseña.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.LBContraseña.ForeColor = System.Drawing.Color.Black;
             this.LBContraseña.Location = new System.Drawing.Point(25, 254);
             this.LBContraseña.Name = "LBContraseña";
             this.LBContraseña.Size = new System.Drawing.Size(96, 20);
@@ -83,7 +83,7 @@
             // 
             this.LBPerfil.AutoSize = true;
             this.LBPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LBPerfil.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.LBPerfil.ForeColor = System.Drawing.Color.Black;
             this.LBPerfil.Location = new System.Drawing.Point(25, 298);
             this.LBPerfil.Name = "LBPerfil";
             this.LBPerfil.Size = new System.Drawing.Size(48, 20);
@@ -120,7 +120,7 @@
             // 
             // GbUsuarios
             // 
-            this.GbUsuarios.BackColor = System.Drawing.Color.Black;
+            this.GbUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.GbUsuarios.Controls.Add(this.LbCodigo);
             this.GbUsuarios.Controls.Add(this.txtCodigo);
             this.GbUsuarios.Controls.Add(this.panel2);
@@ -149,7 +149,7 @@
             // 
             this.LbCodigo.AutoSize = true;
             this.LbCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LbCodigo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.LbCodigo.ForeColor = System.Drawing.Color.Black;
             this.LbCodigo.Location = new System.Drawing.Point(25, 154);
             this.LbCodigo.Name = "LbCodigo";
             this.LbCodigo.Size = new System.Drawing.Size(63, 20);
@@ -199,6 +199,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(9, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 20);
@@ -221,6 +222,7 @@
             // 
             this.RbAgregar.AutoSize = true;
             this.RbAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbAgregar.ForeColor = System.Drawing.Color.Black;
             this.RbAgregar.Location = new System.Drawing.Point(7, 6);
             this.RbAgregar.Name = "RbAgregar";
             this.RbAgregar.Size = new System.Drawing.Size(84, 24);
@@ -234,6 +236,7 @@
             // 
             this.RbEliminar.AutoSize = true;
             this.RbEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbEliminar.ForeColor = System.Drawing.Color.Black;
             this.RbEliminar.Location = new System.Drawing.Point(7, 53);
             this.RbEliminar.Name = "RbEliminar";
             this.RbEliminar.Size = new System.Drawing.Size(83, 24);
@@ -247,6 +250,7 @@
             // 
             this.RbModificar.AutoSize = true;
             this.RbModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RbModificar.ForeColor = System.Drawing.Color.Black;
             this.RbModificar.Location = new System.Drawing.Point(7, 29);
             this.RbModificar.Name = "RbModificar";
             this.RbModificar.Size = new System.Drawing.Size(91, 24);
@@ -268,6 +272,7 @@
             // 
             // BtSalir
             // 
+            this.BtSalir.ForeColor = System.Drawing.Color.Black;
             this.BtSalir.Location = new System.Drawing.Point(374, 381);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(92, 53);
@@ -278,6 +283,7 @@
             // 
             // BtEliminar
             // 
+            this.BtEliminar.ForeColor = System.Drawing.Color.Black;
             this.BtEliminar.Location = new System.Drawing.Point(252, 381);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Size = new System.Drawing.Size(92, 53);
@@ -288,6 +294,7 @@
             // 
             // BtModificar
             // 
+            this.BtModificar.ForeColor = System.Drawing.Color.Black;
             this.BtModificar.Location = new System.Drawing.Point(138, 381);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Size = new System.Drawing.Size(92, 53);
@@ -298,6 +305,7 @@
             // 
             // BtAgregar
             // 
+            this.BtAgregar.ForeColor = System.Drawing.Color.Black;
             this.BtAgregar.Location = new System.Drawing.Point(29, 381);
             this.BtAgregar.Name = "BtAgregar";
             this.BtAgregar.Size = new System.Drawing.Size(92, 53);
