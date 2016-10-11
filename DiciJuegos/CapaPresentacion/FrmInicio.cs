@@ -83,5 +83,6 @@ namespace CapaPresentacion
         {
             this.PContenedor.Controls.Clear();
         }
+
     }
 }

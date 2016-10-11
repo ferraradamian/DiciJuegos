@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -15,11 +16,14 @@ namespace CapaPresentacion
         public FrmABMPalabras()
         {
             InitializeComponent();
+            cargarRegiones();
+            cargarCategorias();
+            TxtPalabra.Select();
         }
 
         private void BtSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         private void BtnBuscarImg_Click(object sender, EventArgs e)
@@ -44,18 +48,88 @@ namespace CapaPresentacion
             }
         }
 
-        private void BtnModulacion_Click(object sender, EventArgs e)
+        private void BtAgregar_Click(object sender, EventArgs e)
         {
-            OpenFileDialog BuscarModulacion = new OpenFileDialog();
-            BuscarModulacion.Filter = "Image Files(*.bmp, *.jpg, *png) | *.bmp; *.jpg; *png";
-
-            if (BuscarModulacion.ShowDialog() == DialogResult.OK)
+            if (!String.IsNullOrEmpty(TxtPalabra.Text))
             {
-                TxtModulacion.Text = BuscarModulacion.FileName;
+                MessageBox.Show("Ingrese una palabra", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            if (!String.IsNullOrEmpty(TxtImagen.Text))
+            {
+                NPalabras.guardarArchivo(TxtImagen.Text);
+            }
+            if (!String.IsNullOrEmpty(TxtSeña.Text))
+            {
+                NPalabras.guardarArchivo(TxtSeña.Text);
+            }
+            List<string> regiones = new List<string>();
+            if (ChlbRegiones.CheckedItems.Count > 0 )
+            {                
+                foreach (var item in ChlbRegiones.CheckedItems)
+                {
+                    regiones.Add(item.ToString());
+                }
+            }
+            List<string> categorias = new List<string>();
+            if (ChlbCategorias.CheckedItems.Count > 0)
+            {
+                
+                foreach (var item in ChlbCategorias.CheckedItems)
+                {
+                    categorias.Add(item.ToString());
+                }
+            }
+            if (NPalabras.agregarPalabra(TxtPalabra.Text,TxtDefinicion.Text,TxtImagen.Text,TxtSeña.Text, regiones,categorias))
+            {
+                MessageBox.Show("Palabra Cargada Correctamente", "Mensaje Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Error, la Palabra no Pudo ser Guardada", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void GbPalabra_Enter(object sender, EventArgs e)
+        private void cargarRegiones()
+        {
+            List<String> regiones = new List<String>();
+            regiones = NRegiones.obtenerRegiones();
+
+            foreach (var item in regiones)
+            {
+                ChlbRegiones.Items.Add(item);
+            }
+        }
+
+        private void cargarCategorias()
+        {
+            List<String> categorias = new List<String>();
+            categorias = NCategorias.obtenerCategorias();
+
+            foreach (var item in categorias)
+            {
+                ChlbCategorias.Items.Add(item);
+            }
+        }
+
+        private void limpiar()
+        {
+            TxtPalabra.Clear();
+            TxtDefinicion.Clear();
+            TxtImagen.Clear();
+            TxtSeña.Clear();
+            ChlbCategorias.ClearSelected();
+            ChlbRegiones.ClearSelected();
+        }
+
+
+        private void BtModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtEliminar_Click(object sender, EventArgs e)
         {
 
         }

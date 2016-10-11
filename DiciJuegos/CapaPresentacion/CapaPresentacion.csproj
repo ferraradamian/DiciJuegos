@@ -92,6 +92,12 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="JuegoAuto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JuegoAuto.Designer.cs">
+      <DependentUpon>JuegoAuto.cs</DependentUpon>
+    </Compile>
     <Compile Include="JuegoRana.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuegoAuto.resx">
+      <DependentUpon>JuegoAuto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JuegoRana.resx">
       <DependentUpon>JuegoRana.cs</DependentUpon>

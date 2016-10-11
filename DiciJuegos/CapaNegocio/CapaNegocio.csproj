@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NCategorias.cs" />
+    <Compile Include="NPalabras.cs" />
     <Compile Include="NRegiones.cs" />
     <Compile Include="NUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
