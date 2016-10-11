@@ -80,7 +80,7 @@
             this.GbPalabra.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.GbPalabra.Location = new System.Drawing.Point(0, 0);
             this.GbPalabra.Name = "GbPalabra";
-            this.GbPalabra.Size = new System.Drawing.Size(528, 445);
+            this.GbPalabra.Size = new System.Drawing.Size(528, 485);
             this.GbPalabra.TabIndex = 10;
             this.GbPalabra.TabStop = false;
             this.GbPalabra.Text = "Palabras";
@@ -279,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(528, 445);
+            this.ClientSize = new System.Drawing.Size(528, 485);
             this.ControlBox = false;
             this.Controls.Add(this.GbPalabra);
             this.Name = "FrmABMPalabras";

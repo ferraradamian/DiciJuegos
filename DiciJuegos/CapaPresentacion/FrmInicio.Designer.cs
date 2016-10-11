@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ToolStripMenuItem aBMsToolStripMenuItem;
             this.TLPFondoInicio = new System.Windows.Forms.TableLayoutPanel();
             this.MSInicio = new System.Windows.Forms.MenuStrip();
             this.diccionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adivinarPalabraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.palabrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,67 +46,15 @@
             this.CreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBUtnFooter = new System.Windows.Forms.PictureBox();
             this.PContenedor = new System.Windows.Forms.Panel();
+            aBMsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TLPFondoInicio.SuspendLayout();
             this.MSInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PBUtnFooter)).BeginInit();
             this.SuspendLayout();
             // 
-            // aBMsToolStripMenuItem
-            // 
-            aBMsToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            aBMsToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            aBMsToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.palabrasToolStripMenuItem,
-            this.usuariosToolStripMenuItem,
-            this.categoriaToolStripMenuItem,
-            this.regionesToolStripMenuItem});
-            aBMsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            aBMsToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
-            aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
-            aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
-            aBMsToolStripMenuItem.Text = "ABMs";
-            aBMsToolStripMenuItem.Click += new System.EventHandler(this.aBMsToolStripMenuItem_Click);
-            // 
-            // palabrasToolStripMenuItem
-            // 
-            this.palabrasToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.palabrasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.palabrasToolStripMenuItem.Name = "palabrasToolStripMenuItem";
-            this.palabrasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.palabrasToolStripMenuItem.Text = "Palabras";
-            this.palabrasToolStripMenuItem.Click += new System.EventHandler(this.palabrasToolStripMenuItem_Click);
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.usuariosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
-            // categoriaToolStripMenuItem
-            // 
-            this.categoriaToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.categoriaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.categoriaToolStripMenuItem.Text = "Categorias";
-            this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
-            // 
-            // regionesToolStripMenuItem
-            // 
-            this.regionesToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.regionesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.regionesToolStripMenuItem.Name = "regionesToolStripMenuItem";
-            this.regionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.regionesToolStripMenuItem.Text = "Regiones";
-            this.regionesToolStripMenuItem.Click += new System.EventHandler(this.regionesToolStripMenuItem_Click);
-            // 
             // TLPFondoInicio
             // 
-            this.TLPFondoInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.TLPFondoInicio.BackColor = System.Drawing.Color.Transparent;
             this.TLPFondoInicio.ColumnCount = 1;
             this.TLPFondoInicio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLPFondoInicio.Controls.Add(this.MSInicio, 0, 0);
@@ -122,15 +69,14 @@
             this.TLPFondoInicio.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
             this.TLPFondoInicio.Size = new System.Drawing.Size(905, 665);
             this.TLPFondoInicio.TabIndex = 0;
-            this.TLPFondoInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.TLPFondoInicio_Paint);
             // 
             // MSInicio
             // 
-            this.MSInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.MSInicio.BackColor = System.Drawing.Color.Transparent;
             this.MSInicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MSInicio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.diccionarioToolStripMenuItem,
-            this.aBMsToolStripMenuItem,
+            aBMsToolStripMenuItem,
             this.juegosToolStripMenuItem,
             this.loginToolStripMenuItem,
             this.configuracToolStripMenuItem,
@@ -159,16 +105,16 @@
             // 
             // aBMsToolStripMenuItem
             // 
-            this.aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            aBMsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosToolStripMenuItem,
             this.palabrasToolStripMenuItem,
             this.categoriaToolStripMenuItem,
             this.regionesToolStripMenuItem});
-            this.aBMsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
-            this.aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
-            this.aBMsToolStripMenuItem.Text = "ABMs";
-            this.aBMsToolStripMenuItem.Click += new System.EventHandler(this.aBMsToolStripMenuItem_Click);
+            aBMsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            aBMsToolStripMenuItem.Name = "aBMsToolStripMenuItem";
+            aBMsToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
+            aBMsToolStripMenuItem.Text = "ABMs";
+            aBMsToolStripMenuItem.Click += new System.EventHandler(this.aBMsToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -200,7 +146,6 @@
             // 
             // juegosToolStripMenuItem
             // 
-            this.juegosToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("juegosToolStripMenuItem.BackgroundImage")));
             this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ranaToolStripMenuItem,
             this.autosToolStripMenuItem,
@@ -264,30 +209,22 @@
             this.PBUtnFooter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PBUtnFooter.TabIndex = 1;
             this.PBUtnFooter.TabStop = false;
-            this.PBUtnFooter.Click += new System.EventHandler(this.PBUtnFooter_Click);
             // 
             // PContenedor
             // 
             this.PContenedor.BackColor = System.Drawing.Color.Transparent;
             this.PContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PContenedor.ForeColor = System.Drawing.Color.White;
             this.PContenedor.Location = new System.Drawing.Point(3, 32);
             this.PContenedor.Name = "PContenedor";
             this.PContenedor.Size = new System.Drawing.Size(899, 562);
             this.PContenedor.TabIndex = 2;
             this.PContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PContenedor_Paint);
             // 
-            // probarMiVozToolStripMenuItem
-            // 
-            this.probarMiVozToolStripMenuItem.Name = "probarMiVozToolStripMenuItem";
-            this.probarMiVozToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.probarMiVozToolStripMenuItem.Text = "Probar mi voz";
-            this.probarMiVozToolStripMenuItem.Click += new System.EventHandler(this.probarMiVozToolStripMenuItem_Click);
-            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
             this.ClientSize = new System.Drawing.Size(905, 665);
             this.Controls.Add(this.TLPFondoInicio);
             this.MainMenuStrip = this.MSInicio;
