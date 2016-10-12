@@ -50,7 +50,7 @@ namespace CapaPresentacion
 
         private void BtAgregar_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtPalabra.Text))
+            if (String.IsNullOrEmpty(TxtPalabra.Text))
             {
                 MessageBox.Show("Ingrese una palabra", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;

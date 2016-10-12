@@ -35,23 +35,42 @@ namespace CapaDatos
 
         public static bool InsertarPalabra(String pPalabra, String pDefinicion, String pImagen, String pSeña, List<string> pRegion, List<string> pCategoria)
         {
-            SqlCommand sql = new SqlCommand("InsertPalabras", DConexion.ObtnerConexion());
-            sql.CommandType = CommandType.StoredProcedure;
-            sql.Parameters.Add("@Palabra", SqlDbType.VarChar, 30).Value = pPalabra;
-            sql.Parameters.Add("@Definicion", SqlDbType.VarChar, 200).Value = pImagen;
-            sql.Parameters.Add("@imagen", SqlDbType.VarChar, 120).Value = pSeña;
-            sql.Parameters.Add("@Region", SqlDbType.VarChar, 20).Value = pRegion;
-            sql.Parameters.Add("@categoria", SqlDbType.VarChar, 20).Value = pCategoria;
-            sql.Parameters.Add("@senia", SqlDbType.VarChar, 120).Value = pSeña;
             try
-            {
-                int r = sql.ExecuteNonQuery();
-                sql.Connection.Close();
+            {  
+                SqlCommand Insert = new SqlCommand("InsertPalabras", DConexion.ObtnerConexion());
+                Insert.CommandType = CommandType.StoredProcedure;
+                Insert.Parameters.Add("@Palabra", SqlDbType.VarChar, 30).Value = pPalabra;
+                Insert.Parameters.Add("@Definicion", SqlDbType.VarChar, 200).Value = pDefinicion; 
+                Insert.Parameters.Add("@imagen", SqlDbType.VarChar, 120).Value = pImagen;
+                int r = Insert.ExecuteNonQuery();
+                Insert.Connection.Close();
+
+                foreach (var item in pCategoria)
+                {
+                    SqlCommand RelCategoriaPalabra = new SqlCommand("InsertRelCategoriaPalabra", DConexion.ObtnerConexion());
+                    RelCategoriaPalabra.CommandType = CommandType.StoredProcedure;
+                    RelCategoriaPalabra.Parameters.Add("@Palabra", SqlDbType.VarChar, 20).Value = pPalabra;
+                    RelCategoriaPalabra.Parameters.Add("@categoria", SqlDbType.VarChar, 20).Value = item;                   
+
+                    r = RelCategoriaPalabra.ExecuteNonQuery();
+                    RelCategoriaPalabra.Connection.Close();
+                }
+
+                foreach (var item in pRegion)
+                {
+                    SqlCommand InsertSenia = new SqlCommand("InsertSenia", DConexion.ObtnerConexion());
+                    InsertSenia.CommandType = CommandType.StoredProcedure;
+                    InsertSenia.Parameters.Add("@Palabra", SqlDbType.VarChar, 20).Value = pPalabra;
+                    InsertSenia.Parameters.Add("@Region", SqlDbType.VarChar, 20).Value = item;
+                    InsertSenia.Parameters.Add("@senia", SqlDbType.VarChar, 20).Value = pSeña;
+                    r = InsertSenia.ExecuteNonQuery();
+                    InsertSenia.Connection.Close();
+                }  
+
                 return (r > 0);
             }
             catch (Exception)
             {
-                sql.Connection.Close();
                 return false;
             }
         }
