@@ -40,8 +40,8 @@ namespace CapaDatos
                 SqlCommand Insert = new SqlCommand("InsertPalabras", DConexion.ObtnerConexion());
                 Insert.CommandType = CommandType.StoredProcedure;
                 Insert.Parameters.Add("@Palabra", SqlDbType.VarChar, 30).Value = pPalabra;
-                Insert.Parameters.Add("@Definicion", SqlDbType.VarChar, 200).Value = pDefinicion; 
-                Insert.Parameters.Add("@imagen", SqlDbType.VarChar, 120).Value = pImagen;
+                Insert.Parameters.Add("@Definicion", SqlDbType.VarChar, 500).Value = pDefinicion; 
+                Insert.Parameters.Add("@imagen", SqlDbType.VarChar, 300).Value = pImagen;
                 int r = Insert.ExecuteNonQuery();
                 Insert.Connection.Close();
 
@@ -62,7 +62,7 @@ namespace CapaDatos
                     InsertSenia.CommandType = CommandType.StoredProcedure;
                     InsertSenia.Parameters.Add("@Palabra", SqlDbType.VarChar, 20).Value = pPalabra;
                     InsertSenia.Parameters.Add("@Region", SqlDbType.VarChar, 20).Value = item;
-                    InsertSenia.Parameters.Add("@senia", SqlDbType.VarChar, 20).Value = pSeña;
+                    InsertSenia.Parameters.Add("@senia", SqlDbType.VarChar, 300).Value = pSeña;
                     r = InsertSenia.ExecuteNonQuery();
                     InsertSenia.Connection.Close();
                 }  

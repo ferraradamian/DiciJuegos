@@ -84,5 +84,11 @@ namespace CapaPresentacion
             this.PContenedor.Controls.Clear();
         }
 
+        private void adivinarPalabraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdivinarPalabra controlAdivinarPalabra = new AdivinarPalabra();
+            this.PContenedor.Controls.Clear();
+            this.PContenedor.Controls.Add(controlAdivinarPalabra);
+        }
     }
 }

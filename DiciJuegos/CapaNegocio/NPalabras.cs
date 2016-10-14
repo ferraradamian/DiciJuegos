@@ -12,8 +12,11 @@ namespace CapaNegocio
 {
     public class NPalabras
     {
+        private static string rutaSeña = null;
+        private static string rutaImagen = null;
         public static void guardarArchivo(string pSourcePath)
         {
+            string extension = null;
             string fileName = Path.GetFileName(pSourcePath); 
             string sourcePath = Path.GetDirectoryName(pSourcePath);
             string targetPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\Archivos";
@@ -31,11 +34,24 @@ namespace CapaNegocio
             // To copy a file to another location and 
             // overwrite the destination file if it already exists.
             File.Copy(sourceFile, destFile, true);
+
+            extension = Path.GetExtension(destFile);
+            if (extension == ".avi" || extension == ".mpeg" || extension == ".mov" || extension == ".mpge4" || extension == ".3gp")
+            {
+                rutaSeña = destFile;
+            }
+            if (extension == ".bmp" || extension == ".jpg" || extension == ".png")
+            {
+                rutaImagen = destFile;
+            }
         }
 
-        public static bool agregarPalabra(string pPalabra,string pDefinicion,string pImagen, string pSeña,List<string> pRegion,List<string> pCategoria)
-        {            
-            return DPalabras.InsertarPalabra(pPalabra, pDefinicion, pImagen, pSeña, pRegion, pCategoria);
+        public static bool agregarPalabra(string pPalabra,string pDefinicion,string pImagen, string pSeña, List<string> pRegion,List<string> pCategoria)
+        {
+            bool result = DPalabras.InsertarPalabra(pPalabra, pDefinicion, rutaImagen, rutaSeña, pRegion, pCategoria);
+            rutaSeña = null;
+            rutaImagen = null;
+            return result;
         }
 
         

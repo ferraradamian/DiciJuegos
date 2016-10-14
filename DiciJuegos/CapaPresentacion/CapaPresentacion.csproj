@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdivinarPalabra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdivinarPalabra.Designer.cs">
+      <DependentUpon>AdivinarPalabra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Creditos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdivinarPalabra.resx">
+      <DependentUpon>AdivinarPalabra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mosca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo infantil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo infantil1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cats-30746__180.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

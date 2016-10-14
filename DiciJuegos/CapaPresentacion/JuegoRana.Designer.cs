@@ -102,7 +102,7 @@
             this.Controls.Add(this.PtrBxMosca);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "JuegoRana";
-            this.Size = new System.Drawing.Size(1023, 520);
+            this.Size = new System.Drawing.Size(1023, 590);
             ((System.ComponentModel.ISupportInitialize)(this.PtrBxMosca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PtrBxRana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb1)).EndInit();

@@ -40,7 +40,7 @@ namespace CapaPresentacion
         private void BtnSeña_Click(object sender, EventArgs e)
         {
             OpenFileDialog BuscarSeña = new OpenFileDialog();
-            BuscarSeña.Filter = "Video Files(*.AVI, *.MPEG, *.MOV,*.MPEG4) | *.AVI; *.MPEG; *MOV;*.MPEG4";
+            BuscarSeña.Filter = "Video Files(*.AVI, *.MPEG, *.MOV,*.MPEG4,*.3GP) | *.AVI; *.MPEG; *MOV;*.MPEG4;*.3gp;";
 
             if (BuscarSeña.ShowDialog() == DialogResult.OK)
             {
