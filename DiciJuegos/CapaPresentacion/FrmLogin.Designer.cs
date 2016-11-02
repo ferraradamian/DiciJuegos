@@ -115,7 +115,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +124,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Location = new System.Drawing.Point(219, 276);
@@ -138,7 +138,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.Black;
             this.btnEntrar.Location = new System.Drawing.Point(32, 276);
@@ -152,7 +152,7 @@
             // 
             // GbLogin
             // 
-            this.GbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.GbLogin.BackColor = System.Drawing.Color.Transparent;
             this.GbLogin.Controls.Add(this.pictureBox1);
             this.GbLogin.Controls.Add(this.CBPerfil);
             this.GbLogin.Controls.Add(this.btnEntrar);
@@ -163,7 +163,7 @@
             this.GbLogin.Controls.Add(this.label2);
             this.GbLogin.Controls.Add(this.txtUsuario);
             this.GbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbLogin.ForeColor = System.Drawing.Color.Black;
+            this.GbLogin.ForeColor = System.Drawing.Color.White;
             this.GbLogin.Location = new System.Drawing.Point(4, 4);
             this.GbLogin.Name = "GbLogin";
             this.GbLogin.Size = new System.Drawing.Size(333, 352);
@@ -176,6 +176,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
             this.ClientSize = new System.Drawing.Size(342, 364);
             this.ControlBox = false;
             this.Controls.Add(this.GbLogin);

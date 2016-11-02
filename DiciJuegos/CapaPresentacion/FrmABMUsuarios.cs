@@ -227,5 +227,10 @@ namespace CapaPresentacion
                 MessageBox.Show("Debe Buscar el Usuario a Eliminar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void GbUsuarios_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

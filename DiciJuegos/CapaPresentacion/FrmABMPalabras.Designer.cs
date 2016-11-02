@@ -80,7 +80,7 @@
             this.GbPalabra.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.GbPalabra.Location = new System.Drawing.Point(0, 0);
             this.GbPalabra.Name = "GbPalabra";
-            this.GbPalabra.Size = new System.Drawing.Size(528, 485);
+            this.GbPalabra.Size = new System.Drawing.Size(528, 480);
             this.GbPalabra.TabIndex = 10;
             this.GbPalabra.TabStop = false;
             this.GbPalabra.Text = "Palabras";
@@ -152,7 +152,7 @@
             // 
             this.lblSeña.AutoSize = true;
             this.lblSeña.ForeColor = System.Drawing.Color.Black;
-            this.lblSeña.Location = new System.Drawing.Point(12, 189);
+            this.lblSeña.Location = new System.Drawing.Point(12, 195);
             this.lblSeña.Name = "lblSeña";
             this.lblSeña.Size = new System.Drawing.Size(56, 20);
             this.lblSeña.TabIndex = 24;
@@ -192,7 +192,7 @@
             // 
             this.ChlbCategorias.CheckOnClick = true;
             this.ChlbCategorias.FormattingEnabled = true;
-            this.ChlbCategorias.Location = new System.Drawing.Point(289, 251);
+            this.ChlbCategorias.Location = new System.Drawing.Point(288, 274);
             this.ChlbCategorias.Name = "ChlbCategorias";
             this.ChlbCategorias.Size = new System.Drawing.Size(228, 109);
             this.ChlbCategorias.Sorted = true;
@@ -202,7 +202,7 @@
             // 
             this.LbCategoria.AutoSize = true;
             this.LbCategoria.ForeColor = System.Drawing.Color.Black;
-            this.LbCategoria.Location = new System.Drawing.Point(284, 267);
+            this.LbCategoria.Location = new System.Drawing.Point(284, 239);
             this.LbCategoria.Name = "LbCategoria";
             this.LbCategoria.Size = new System.Drawing.Size(92, 20);
             this.LbCategoria.TabIndex = 19;
@@ -213,7 +213,7 @@
             // 
             this.ChlbRegiones.CheckOnClick = true;
             this.ChlbRegiones.FormattingEnabled = true;
-            this.ChlbRegiones.Location = new System.Drawing.Point(12, 251);
+            this.ChlbRegiones.Location = new System.Drawing.Point(11, 274);
             this.ChlbRegiones.Name = "ChlbRegiones";
             this.ChlbRegiones.Size = new System.Drawing.Size(210, 109);
             this.ChlbRegiones.Sorted = true;
@@ -223,7 +223,7 @@
             // 
             this.LbRegion.AutoSize = true;
             this.LbRegion.ForeColor = System.Drawing.Color.Black;
-            this.LbRegion.Location = new System.Drawing.Point(9, 267);
+            this.LbRegion.Location = new System.Drawing.Point(12, 239);
             this.LbRegion.Name = "LbRegion";
             this.LbRegion.Size = new System.Drawing.Size(71, 20);
             this.LbRegion.TabIndex = 18;
@@ -232,8 +232,9 @@
             // 
             // BtSalir
             // 
+            this.BtSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtSalir.ForeColor = System.Drawing.Color.Black;
-            this.BtSalir.Location = new System.Drawing.Point(403, 416);
+            this.BtSalir.Location = new System.Drawing.Point(403, 408);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(92, 53);
             this.BtSalir.TabIndex = 11;
@@ -243,8 +244,9 @@
             // 
             // BtEliminar
             // 
+            this.BtEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtEliminar.ForeColor = System.Drawing.Color.Black;
-            this.BtEliminar.Location = new System.Drawing.Point(282, 418);
+            this.BtEliminar.Location = new System.Drawing.Point(282, 410);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Size = new System.Drawing.Size(92, 53);
             this.BtEliminar.TabIndex = 10;
@@ -254,8 +256,9 @@
             // 
             // BtModificar
             // 
+            this.BtModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtModificar.ForeColor = System.Drawing.Color.Black;
-            this.BtModificar.Location = new System.Drawing.Point(160, 416);
+            this.BtModificar.Location = new System.Drawing.Point(160, 408);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Size = new System.Drawing.Size(92, 53);
             this.BtModificar.TabIndex = 9;
@@ -265,8 +268,9 @@
             // 
             // BtAgregar
             // 
+            this.BtAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtAgregar.ForeColor = System.Drawing.Color.Black;
-            this.BtAgregar.Location = new System.Drawing.Point(42, 416);
+            this.BtAgregar.Location = new System.Drawing.Point(42, 408);
             this.BtAgregar.Name = "BtAgregar";
             this.BtAgregar.Size = new System.Drawing.Size(92, 53);
             this.BtAgregar.TabIndex = 8;
@@ -279,7 +283,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(528, 485);
+            this.ClientSize = new System.Drawing.Size(528, 480);
             this.ControlBox = false;
             this.Controls.Add(this.GbPalabra);
             this.Name = "FrmABMPalabras";

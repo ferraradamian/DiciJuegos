@@ -38,13 +38,13 @@
             // 
             // GbConfiguracion
             // 
-            this.GbConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.GbConfiguracion.BackColor = System.Drawing.Color.Transparent;
             this.GbConfiguracion.Controls.Add(this.BtnAceptar);
             this.GbConfiguracion.Controls.Add(this.CmbxRegion);
             this.GbConfiguracion.Controls.Add(this.LRegion);
             this.GbConfiguracion.Controls.Add(this.BtnCancelar);
             this.GbConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbConfiguracion.ForeColor = System.Drawing.Color.Black;
+            this.GbConfiguracion.ForeColor = System.Drawing.Color.White;
             this.GbConfiguracion.Location = new System.Drawing.Point(12, 12);
             this.GbConfiguracion.Name = "GbConfiguracion";
             this.GbConfiguracion.Size = new System.Drawing.Size(324, 173);
@@ -55,7 +55,7 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnAceptar.ForeColor = System.Drawing.Color.Black;
             this.BtnAceptar.Location = new System.Drawing.Point(29, 104);
             this.BtnAceptar.Name = "BtnAceptar";
@@ -80,7 +80,7 @@
             // LRegion
             // 
             this.LRegion.AutoSize = true;
-            this.LRegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LRegion.BackColor = System.Drawing.Color.Transparent;
             this.LRegion.ForeColor = System.Drawing.Color.Black;
             this.LRegion.Location = new System.Drawing.Point(25, 41);
             this.LRegion.Name = "LRegion";
@@ -92,7 +92,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnCancelar.ForeColor = System.Drawing.Color.Black;
             this.BtnCancelar.Location = new System.Drawing.Point(201, 104);
             this.BtnCancelar.Name = "BtnCancelar";
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(342, 193);
             this.Controls.Add(this.GbConfiguracion);

@@ -10,7 +10,6 @@ namespace CapaDatos
 {
     public class DPalabras
     {
-        public int Id_Palabra { set; get; }
         public String Palabra { set; get; }
         public String Imagen { set; get; }
         public String Seña { set; get; }
@@ -23,8 +22,7 @@ namespace CapaDatos
         }
 
         public DPalabras(int pId, String pPalabra,String pDefinicion, String pImagen, String pSeña, String pRegion, String pCategoria)
-        {
-            this.Id_Palabra = pId;
+        {            
             this.Palabra = pPalabra;
             this.Definicion = pDefinicion;
             this.Imagen = pImagen;
@@ -74,5 +72,34 @@ namespace CapaDatos
                 return false;
             }
         }
+
+        public static DPalabras PalabraRandom(String pPalabra, String pCategoria, String pRegion)
+        {
+            DPalabras palabra = new DPalabras();
+            try
+            {
+                SqlCommand obtenerPalabraRandom = new SqlCommand("PalabraRandom", DConexion.ObtnerConexion());
+                obtenerPalabraRandom.CommandType = CommandType.StoredProcedure;
+                obtenerPalabraRandom.Parameters.Add("@palabra", SqlDbType.VarChar, 30).Value = pPalabra;
+                obtenerPalabraRandom.Parameters.Add("@categoria", SqlDbType.VarChar, 500).Value = pCategoria;
+                obtenerPalabraRandom.Parameters.Add("@region", SqlDbType.VarChar, 300).Value = pRegion;
+                SqlDataReader rdr = obtenerPalabraRandom.ExecuteReader(CommandBehavior.CloseConnection);
+                rdr.Read();
+                palabra.Palabra = rdr.GetString(0);
+                palabra.Definicion = rdr.GetString(1);
+                palabra.Imagen = rdr.GetString(2);
+                palabra.Seña = rdr.GetString(3);
+                palabra.Categoria = rdr.GetString(4);
+                palabra.Region = rdr.GetString(5);
+                return palabra;
+            }
+            catch(Exception)
+            {
+                return palabra;
+            }
+        }
+
+
+
     }
 }

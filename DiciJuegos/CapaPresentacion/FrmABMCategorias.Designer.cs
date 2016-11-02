@@ -43,7 +43,7 @@
             // 
             // GbCategoria
             // 
-            this.GbCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.GbCategoria.BackColor = System.Drawing.Color.Transparent;
             this.GbCategoria.Controls.Add(this.pictureBox1);
             this.GbCategoria.Controls.Add(this.ChlbCategorias);
             this.GbCategoria.Controls.Add(this.TxtCategoria);
@@ -53,7 +53,7 @@
             this.GbCategoria.Controls.Add(this.BtModificar);
             this.GbCategoria.Controls.Add(this.BtAgregar);
             this.GbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GbCategoria.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.GbCategoria.ForeColor = System.Drawing.Color.White;
             this.GbCategoria.Location = new System.Drawing.Point(7, 7);
             this.GbCategoria.Name = "GbCategoria";
             this.GbCategoria.Size = new System.Drawing.Size(425, 274);
@@ -93,6 +93,7 @@
             // LbCategoria
             // 
             this.LbCategoria.AutoSize = true;
+            this.LbCategoria.ForeColor = System.Drawing.Color.Black;
             this.LbCategoria.Location = new System.Drawing.Point(25, 37);
             this.LbCategoria.Name = "LbCategoria";
             this.LbCategoria.Size = new System.Drawing.Size(92, 20);
@@ -102,6 +103,8 @@
             // 
             // BtSalir
             // 
+            this.BtSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtSalir.ForeColor = System.Drawing.Color.Black;
             this.BtSalir.Location = new System.Drawing.Point(320, 204);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(92, 53);
@@ -112,6 +115,8 @@
             // 
             // BtEliminar
             // 
+            this.BtEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtEliminar.ForeColor = System.Drawing.Color.Black;
             this.BtEliminar.Location = new System.Drawing.Point(222, 204);
             this.BtEliminar.Name = "BtEliminar";
             this.BtEliminar.Size = new System.Drawing.Size(92, 53);
@@ -122,6 +127,8 @@
             // 
             // BtModificar
             // 
+            this.BtModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtModificar.ForeColor = System.Drawing.Color.Black;
             this.BtModificar.Location = new System.Drawing.Point(123, 204);
             this.BtModificar.Name = "BtModificar";
             this.BtModificar.Size = new System.Drawing.Size(92, 53);
@@ -132,6 +139,8 @@
             // 
             // BtAgregar
             // 
+            this.BtAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BtAgregar.ForeColor = System.Drawing.Color.Black;
             this.BtAgregar.Location = new System.Drawing.Point(17, 204);
             this.BtAgregar.Name = "BtAgregar";
             this.BtAgregar.Size = new System.Drawing.Size(92, 53);
@@ -145,6 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackgroundImage = global::CapaPresentacion.Properties.Resources.textura_1_celeste;
             this.ClientSize = new System.Drawing.Size(446, 289);
             this.ControlBox = false;
             this.Controls.Add(this.GbCategoria);

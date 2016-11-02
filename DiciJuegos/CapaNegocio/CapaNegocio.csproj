@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NAdivinarPalabra.cs" />
     <Compile Include="NCategorias.cs" />
     <Compile Include="NPalabras.cs" />
     <Compile Include="NRegiones.cs" />
